@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<!-- Insertar imagenes de cada apartado -->
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Samuel Henares Choaibi">
+    <meta name="description" content="Apuntes HTML Básico">
+    <meta property="og:url" content="Apuntes HTML Básico-Samuel Henares Choaibi">
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="HTML 5, HTML Básico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="html.png">
+    <title>HTML Básico</title>
+</head>
+
+<body>
+    <center>
+        <h1><span style="color: black"><b>1.HTML BÁSICO</b></span></h1>
+    </center>
+    <center>
+        <p><a href="index.html" target="_self"><span style="color: black"><b>Volver al menú de apuntes</b></span></a>
+        </p>
+    </center>
+    <hr>
+    <article>
+        <p><b>ÍNDICE</b></p>
+        <ol type="1">
+            <li><a href="#seccion1">Introducción a HTML</a></li>
+            <li><a href="#seccion2">Estructura Básica de un documento HTML</a></li>
+            <li><a href="#seccion3">Etiquetas Básicas</a></li>
+            <li><a href="#seccion4">Elementos HTML y Anidamiento</a></li>
+            <li><a href="#seccion5">Atributos HTML</a></li>
+            <li><a href="#seccion6">Texto formateado</a></li>
+            <li><a href="#seccion7">Comentarios en HTML</a></li>
+            <li><a href="#seccion8">Inserción de Imágenes</a></li>
+            <li><a href="#seccion9">Enlaces</a></li>
+            <li><a href="#seccion10">Listas</a></li>
+            <li><a href="#seccion11">Tablas</a></li>
+            <li><a href="#seccion12">Buenas prácticas</a></li>
+        </ol>
+    </article><br>
+
+    <article id="seccion1">
+        <h2><b>INTRODUCCIÓN A HTML</b></h2>
+        <h3><b>¿Qué es HTML?</b></h3>
+        <ol>
+            <li><b>HTML (HyperText Markup Language)</b> es el lenguaje de marcas para crear páginas web.</li>
+            <li>Define la estructura de la página con etiquetas que el navegador interpreta para mostrar contenido.</li>
+        </ol>
+        <h3><b>Breve Historia</b></h3>
+        <ol>
+            <li>Creado por <b>Tim Berners-Lee</b> en <b>1991</b></li>
+            <li><b>HTML 2.0</b> (1996): Primer estándar oficial</li>
+            <li><b>HTML5</b> (2014): Última versión con nuevas funcionalidades como soporte para video, audio y gráficos
+            </li>
+        </ol>
+    </article><br>
+
+    <article id="seccion2">
+        <h2><b>ESTRUCTURA BÁSICA DE UN DOCUMENTO HTML</b></h2>
+        <h3><b>Estructura general</b></h3>
+        <ol>
+            <li>Un documento HTML se basa en una estructura jerárquica de <b>etiquetas</b> que definen las diferentes
+                partes de una página.</li>
+            <li>Cada página HTML sigue una estructura similar, empezando por el <b>&lt;!DOCTYPE>&gt</b>; seguido de las
+                etiquetas &lt;html&gt;, &lt;head&gt;, &lt;body&gt;.</li>
+        </ol>
+    </article><br>
+
+    <article id="seccion3">
+        <h2><b>ETIQUETAS BÁSICAS</b></h2>
+        <h3><b>&lt;title&gt;</b></h3>
+        <p>Define el título que aparece en la pestaña del navegador o en los
+            resultados de los buscadores.</p><br>
+
+        <h3><b>&lt;h1&gt;</b> a <b>&lt;h6&gt;</b></h3>
+        <p>Utilizados para definir títulos y subtítulos en la página web.</p><br>
+
+        <h3><b>&lt;p&gt;</b></h3>
+        <p>Se utiliza para definir bloques de texto en párrafos.</p><br>
+
+        <h3><b>&lt;br&gt;</b></h3>
+        <p>Fuerza el texto a empezar en una nueva línea.</p><br>
+
+        <h3><b>&amp;nbsp</b></h3>
+        <p>Inserta un espacio en blanco que no se rompe entre líneas.</p><br>
+    </article><br>
+
+    <article id="seccion4">
+        <h2><b>ELEMENTOS HTML Y ANIDAMIENTOS</b></h2>
+        <h3><b>Diferencia entre Etiquetas y Elementos</b></h3><br>
+        <table border="1" cellpadding="10" cellspacing="5">
+            <thead>
+                <th><b>
+                        <center>Etiqueta (Tag)</center>
+                    </b></th>
+                <th><b>
+                        <center>Elemento</center>
+                    </b></th>
+                <th><b>
+                        <center>Elemetnos anidados</center>
+                    </b></th>
+            </thead>
+            <tbody>
+                <tr>
+                    <ul>
+                        <td>
+
+                            <li>Es la parte que define el inicio y el final de un componente en HTML.</li>
+
+                        </td>
+                        <td>
+
+                            <li>Un <b>elemento</b> incluye la etiqueta de apertura, el contenido (si lo hubiere), y la
+                                etiqueta de cierre.</li>
+
+                        </td>
+                        <td>
+
+                            <li><b>Anidamente</b> se refiere a colocar un
+                                elemento HTML dentro de otro
+                                elemento.
+
+                        </td>
+                    </ul>
+                </tr>
+                <tr>
+                    <ul>
+                        <td>
+
+                            <li>Se delimita con los símbolos &lt;&gt;.
+                                Ejemplos: &lt;p&gt;, &lt;/p&gt, &lt;h1&gt, &lt;/h1&gt.</li>
+
+                        </td>
+                        <td>
+
+                            <li>Los elementos pueden estar vacíos o contener otros
+                                elementos dentro.</li>
+
+                        </td>
+                        <td>
+
+                            <li>Es importante seguir correctamente
+                                el orden de las etiquetas: la primera
+                                que se abre es la última que se cierra.</li>
+
+                        </td>
+                    </ul>
+                </tr>
+            </tbody>
+
+        </table>
+    </article><br>
+
+    <article id="seccion5">
+        <h2><b>ATRIBUTOS HTML</b></h2>
+        <p>Los atributos en HTML son elementos que añaden información extra a las etiquetas HTML para modificar el
+            comportamiento o la apariencia. Estos atributos siempre se colocan dentro de la etiqueta de apertura y
+            siguen el formato
+            <b>nombre="valor"</b>.
+        </p>
+    </article><br>
+
+    <article id="seccion6">
+        <h2><b>TEXTO FORMATEADO</b></h2>
+        <table border="1" cellpadding="10" cellspacing="5">
+            <thead>
+                <th><b>&lt;b&gt; y &lt;strong&gt;: Negrita</b></th>
+                <th><b>&lt;i&gt; y &lt;em&gt;: Cursiva</b></th>
+                <th><b>&lt;u&gt;: Subrayado</b></th>
+                <th><b>&lt;strike&gt; o &lt;s&gt;: Texto rayado</b></th>
+                <th><b>&lt;sup&gt;: Superíndice</b></th>
+                <th><b>&lt;sub&gt;: Subíndice</b></th>
+            </thead>
+            <tbody>
+                <tr>
+                    <ul>
+                        <td>
+                            <li><b>&lt;b&gt;</b> aplica negrita sin indicar ninguna importancia semántica.</li><br>
+                            <li><b>&lt;strong&gt;</b> aplica negrita e indica que el texto es importante.</li>
+                        </td>
+
+                        <td>
+                            <li><b>&lt;i&gt;</b> aplica cursiva sin implicar énfasis.</li><br>
+                            <li><b>&lt;em&gt;</b> aplica cursiva con énfasis, indicando que el texto tiene importancia.
+                            </li>
+
+                        </td>
+
+                        <td>
+                            <li>Se utiliza para subrayar texto.</li>
+                        </td>
+                        <td>
+                            <li>Aplica un rayado en el texto, indicando que está borrado o ya no es relevante.</li>.
+                        </td>
+                        <td>
+                            <li>Se utiliza para elevar el texto como en exponentes matemáticos.</li>
+                        </td>
+                        <td>
+                            <li>Se utiliza para poner texto en la posición de subíndice, a menudo utilizado en
+                                fórmulas químicas.</li>
+                        </td>
+
+                    </ul>
+
+                </tr>
+            </tbody>
+
+        </table>
+    </article><br>
+
+    <article id="seccion7">
+        <h2><b>COMENTARIOS EN HTML</b></h2>
+        <ul>
+            <li>Los comentarios en HTML son líneas de texto que se añaden al código para dejar notas o explicaciones,
+                pero que no son visibles para los usuarios finales en la
+                página web.</li>
+            <li>Se utilizan para ayudar a los desarrolladores a documentar el código, describir secciones específicas o
+                dejar indicaciones para futuros desarrolladores.</li>
+            <li>Los comentarios no afectan al rendimiento ni a la visualización de la página en el navegador.</li>
+        </ul>
+    </article><br>
+
+    <article id="seccion8">
+        <h2><b>INSERCIÓN DE IMAGENES EN HTML</b></h2>
+        <ul>
+            <li>La etiqueta <b>&lt;img&gt;</b> se utiliza para insertar imágenes en una página web.</li>
+            <li><b>No tiene etiqueta de cierre</b>, ya que es un elemento auto-cerrado.</li>
+            <li>Es esencial proporcionar información sobre la imagen para que se muestre correctamente y para mejorar la
+                accesibilidad.</li>
+        </ul><br>
+        <table border="1" cellpadding="10" cellspacing="5">
+            <thead>
+
+                <th colspan="3"><b>Atributos de Imágenes</b></th>
+
+                <tr>
+                    <th><b>src(source)</b></th>
+                    <th><b>alt(alternate text)</b></th>
+                    <th><strong>width</strong> y <strong>height</strong></th>
+                </tr>
+            </thead>
+            <tbody>
+                <ul>
+                    <tr>
+                        <td>
+                            <li>Define la <b>fuente</b> o el camino de la imagen.</li>
+                        </td>
+                        <td>
+                            <li>Proporciona un <b>texto alternativo</b> que se muestra
+                                si la imagen no se carga o es leída por
+                                lectores de pantalla.</li>
+                        </td>
+                        <td>
+                            <li>Especifica el <b>ancho</b> (width) y la <b>altura</b>
+                                (height) de la imagen en píxeles o porcentajes.</li>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <li>Puede ser un camino relativo o una URL completa.</li>
+                        </td>
+                        <td>
+                            <li>Es fundamental para la <b>accesibilidad</b> y <b>SEO</b>.</li>
+                        </td>
+                        <td>
+                            <li>Es importante para controlar el tamaño de la
+                                imagen en la página.</li>
+                        </td>
+                </ul>
+                </tr>
+            </tbody>
+        </table>
+        <table border="2" cellpadding="5" cellspacing="2">
+            <thead>
+                <th style="color: red;"><strong>IMPORTANTE</strong></th>
+
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <center><b>BUENAS PRÁCTICAS</b< /center>
+                    </td>
+                </tr>
+                <ul>
+                    <tr>
+                        <td>
+                            <li>Siempre utiliza el atributo alto para garantizar una buena
+                                accesibilidad y SEO.</li>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <li>Evita insertar imágenes muy grandes sin reducir su
+                                tamaño, ya que esto puede afectar al rendimiento de la página.</li>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <li>Si las imágenes son responsivas (se adaptan a diferentes
+                                dispositivos), utiliza porcentajes en lugar de píxeles por
+                                width y height.</li>
+                        </td>
+                    </tr>
+                </ul>
+            </tbody>
+        </table>
+    </article><br>
+
+    <article id="seccion9">
+        <h2><b>ENLACES EN HTML</b></h2>
+        <ul>
+            <li>La etiqueta <b>&lt;a&gt;</b> se utiliza para crear enlaces (links) a otras páginas web, documentos,
+                secciones dentro de
+                la misma
+                página o cualquier otro recurso.</li>
+            <li>El elemento esencial para los enlaces es el atributo <b>href</b> que define la URL a la que redirige el
+                usuario.
+            </li>
+            <li>El texto entre la etiqueta de apertura y la de cierre es el que los usuarios verán y podrán pulsar para
+                ser redirigidos.</li>
+        </ul>
+        <table border="1" cellpadding="10" cellspacing="5">
+            <thead>
+                <th colspan="2"><strong>ATRIBUTOS DE LOS ENLACES</strong></th>
+            </thead>
+            <tbody>
+                <tr>
+                    <ol>
+                        <td><b>href(hypertext reference):</b>
+                            <ul>
+                                <li>Define la <b>URL</b> de destinación de enlace.</li>
+                                <li>Puede ser un enlace absoluto (una URL completa) o relativa (camino dentro del mismo
+                                    dominio).</li>
+                            </ul>
+                        </td>
+                        <td><b>target:</b>
+                            <ul>
+                                <li>Define <b>donde se abrirá</b> el enlace: en la misma pestaña, en una pestaña nueva o
+                                    en un nueva ventana.</li>
+                                <li>Los valors más habitules son:</li>
+                                <ul>
+                                    <li><b>_blank:</b> Abre el enlace en una <b>nueva pestaña</b></li>
+                                    <li><b>_self:</b> Abre el enlace en la <b>misma pestaña</b> (valor predeterminado)
+                                    </li>
+                                </ul>
+                            </ul>
+                        </td>
+                    </ol>
+                </tr>
+            </tbody>
+        </table>
+
+    </article><br>
+
+    <article id="seccion10">
+        <h2><b>LISTAS EN HTML</b></h2>
+        <table border="1" cellpadding="10" cellspacing="5">
+            <thead>
+                <th><b>Listas No Ordenadas (&lt;ul&&gt;):</b></th>
+                <th><b>Listas Ordenadas (&lt;ol&&gt;):</b></th>
+                <th><b>Atributos de listas: </b></th>
+
+            </thead>
+            <tbody>
+                <ol>
+                    <tr>
+                        <td>
+                            <li>Se utilizan para listas de elementos sin orden
+                                específico.</li><br>
+                            <li>Los elementos se muestran con viñetas u otros
+                                símbolos antes de cada elemento.</li><br>
+                            <li>Cada elemento de la lista se define con la etiqueta
+                                &lt;li&gt; (list item).</li>
+                        </td>
+                        <td>
+                            <li>Se utilizan para listas en las que el orden de los
+                                elementos es relevante.</li><br>
+                            <li>Los elementos se numeran automáticamente (1, 2,
+                                3, etc.).</li><br>
+                            <li>Cada elemento de la lista también se define con
+                                &lt;li&gt;.</li>
+                        </td>
+                        <td>
+                            <li><b>Atributo type (para listas ordenadas &lt;ol&gt;):</b></li>
+                            <ul>
+                                <li>Se puede utilizar para definir el tipo de numeración de la lista:</li>
+                                <ul>
+                                    <li><strong>1:</strong> Números (predeterminado).</li>
+                                    <li><strong>A:</strong> Mayúsculas.</li>
+                                    <li><strong>a:</strong> Minúsculas.</li>
+                                    <li><strong>I:</strong> Números romanos en mayúsculas.</li>
+                                    <li><strong>i:</strong> Números romanos en minúsculas.</li>
+
+                                </ul>
+                            </ul>
+                            <li><b>Atributo start (para listas ordenadas &lt;ol&gt;):</b></li>
+                            <ul>
+                                <li>Define el número o letra para comenzar la numeración.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </ol>
+            </tbody>
+        </table>
+    </article><br>
+
+    <article id="seccion11">
+        <h2><b>TABLAS BÁSICAS CON HTML</b></h2>
+        <ul>
+            <li>La etiqueta <b>&lt;table&gt;</b> define la tabla y
+                actúa como el contenedor principal.</li><br>
+            <li>La etiqueta <b>&lt;tr&gt;</b> define una fila dentro de la tabla.</li><br>
+            <li>La etiqueta <b>&lt;td&gt;</b> crea una celda dentro de una fila de la trabla (datos de la tabla).</li>
+            <br>
+
+            <li>La etiqueta <b>&lt;thead&gt; (table head)</b> define el encabezamiento de la tabla, agrupando las
+                filas de encabezamiento (habitualmente las que
+                contienen &lt;th&gt;).</li><br>
+
+            <li>La etiqueta <b>&lt;tbody&gt; (table body)</b> agrupa el cuerpo de la mesa, es decir, las filas de
+                datos. Se suele utilizar para separar los datos de los
+                encabezamientos.</li>
+            <br>
+            <li>La etiqueta <b>&lt;th&gt; (table header)</b> Se utiliza para crear una celda de encabezamiento en
+                una mesa. El texto dentro de &lt;th&gt; aparece en negrita y
+                centrado por defecto.</li><br>
+
+        </ul>
+        <p><b>Atributos de Tabla:</b></p>
+        <ol>
+            <li><strong>border:</strong> añade un borde a la mesa ya las celdas.</li>
+            <li><strong>cellpadding:</strong> Define el espacio entre el contenido de la celda y
+                el borde de la celda.</li>
+            <li><strong>cellspacing</strong>Controla el espacio entre las celdas de la mesa.</li>
+        </ol>
+    </article><br>
+
+    <article id="seccion12">
+        <h2 style="color: red;"><b>BUENAS PRÁCTICAS</b></h2>
+        <table border="1" cellpadding="10" cellspacing="5" style="background-color: rgb(237, 177, 64);">
+            <thead>
+                <th style="color: red; font-style: italic;">IMPORTANTE: BUENAS PRÁCTICAS</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><b>Buenas Prácticas con Comentarios:</b>
+                        <ul>
+                            <li>Mantenerlos claros y concisos: Los comentarios deben
+                                ser breves y proporcionar información útil.</li><br>
+                            <li>Evitar comentarios excesivos: Sólo añade
+                                comentarios donde sea necesario para evitar sobrecargar
+                                el código.</li><br>
+                            <li>No dejar comentarios innecesarios en producción: Los
+                                comentarios en entornos de desarrollo pueden ser
+                                útiles, pero en código de producción es mejor dejar sólo
+                                los esenciales.</li><br>
+                        </ul>
+
+                    </td>
+
+                </tr>
+                <tr>
+                    <td><b>Buenas Prácticas con Imágenes:</b>
+                        <ul>
+                            <li><b>Siempre se utiliza el atributo alt</b> para garantizar una buena
+                                accesibilidad y SEO.</li><br>
+                            <li>Evita insertar imágenes muy grandes sin reducir su
+                                tamaño, ya que esto puede afectar al rendimiento de la página.</li><br>
+                            <li>Si las imágenes son responsivas (se adaptan a diferentes
+                                dispositivos), utiliza <b>porcentajes</b> en lugar de píxeles por
+                                width y height.</li><br>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>Buenas Prácticas con Enlaces: </b>
+                        <ul>
+                            <li>Use <b>enlaces descriptivos</b> en lugar de genéricos como
+                                "Clica aquí". Esto mejora la accesibilidad y el SEO.</li><br>
+                            <ul>
+                                <li><b>Correcto: </b>"Visita la página de <b>Contacto</b>"</li>
+                                <li><b>Incorrecto: </b>"Clica aquí"</li><br>
+                            </ul>
+                            <li>Use <b>target="_blank"</b> sólo cuando sea realmente
+                                necesario, ya que abrir enlaces en nuevas pestañas
+                                puede confundir a algunos usuarios.</li><br>
+                            <li>Siempre asegúrate de que los <b>enlaces sean
+                                    accesibles</b> añadiendo una descripción adecuada para
+                                usuarios con lectores de pantalla.</li><br>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><b>Buenas Prácticas con Listas: </b>
+                        <ul>
+                            <li>Use <b>listas no ordenadas (&lt;ul&gt;)</b> cuando el orden de los
+                                ítems no sea importante.</li><br>
+                            <li>Use <b>listas ordenadas (&lt;ol&gt;)</b> cuando el orden sea
+                                relevante.</li><br>
+                            <li>Personaliza las listas según las necesidades visuales o
+                                estilísticas utilizando los atributos adecuados.</li><br>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </article><br>
+
+</body>
+
+</html>
