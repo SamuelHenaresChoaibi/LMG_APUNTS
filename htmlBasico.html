@@ -2,22 +2,29 @@
 <!-- Insertar imagenes de cada apartado -->
 
 <html lang="en">
+<!-- Define el idioma del contenido del documento -->
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="author" content="Samuel Henares Choaibi">
+<head> <!-- Encabezado-->
+    <meta charset="UTF-8"> <!-- Establece la codificación de caracteres a UTF-8 -->
+    <meta name="author" content="Samuel Henares Choaibi"><!-- Define el autor del documento -->
     <meta name="description" content="Apuntes HTML Básico">
+    <!-- Proporciona una descripción del contenido del documento para SEO -->
     <meta property="og:url" content="Apuntes HTML Básico-Samuel Henares Choaibi">
+    <!-- Define la URL del documento para Open Graph (redes sociales) -->
     <meta name="robots" content="index, follow">
-    <meta name="keywords" content="HTML 5, HTML Básico">
+    <!-- Indica a los motores de búsqueda que indexen la página, debería ser 'index, follow' -->
+    <meta name="keywords" content="HTML 5, HTML Básico"> <!-- Palabras clave para SEO -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="html.png">
-    <title>HTML Básico</title>
-</head>
+    <!-- Configura la ventana gráfica para un diseño responsive -->
 
-<body>
-    <center>
-        <h1><span style="color: black"><b>1.HTML BÁSICO</b></span></h1>
+    <link rel="icon" href="Imagenes/html.png"> <!-- Define el logo -->
+    <title>HTML Básico</title> <!-- Define el título del documento que aparece en la pestaña del navegador -->
+</head>
+<!-- Fin del encabezado-->
+
+<body> <!-- Cuerpo -->
+    <center> <!-- Por ahora se utilizará <center> para estilizar un poco el texto mientras solo se usa HTML-->
+        <h1><span style="color: black"><b>1. HTML BÁSICO</b></span></h1>
     </center>
     <center>
         <p><a href="index.html" target="_self"><span style="color: black"><b>Volver al menú de apuntes</b></span></a>
@@ -26,6 +33,8 @@
     <hr>
     <article>
         <p><b>ÍNDICE</b></p>
+        <!-- Índice dividido en secciones con enlace directo a cada apartado del tema de HTML Básico -->
+
         <ol type="1">
             <li><a href="#seccion1">Introducción a HTML</a></li>
             <li><a href="#seccion2">Estructura Básica de un documento HTML</a></li>
@@ -42,15 +51,17 @@
         </ol>
     </article><br>
 
-    <article id="seccion1">
-        <h2><b>INTRODUCCIÓN A HTML</b></h2>
-        <h3><b>¿Qué es HTML?</b></h3>
-        <ol>
+    <!-- Cada sección está dividida con articles para tratar temas distintos es cada apartado, los cuales se les asignan un ID para el índice -->
+
+    <article id="seccion1"> <!--INTRODUCCIÓN A HTML: Breve introducción del lenguaje-->
+        <h2><b>INTRODUCCIÓN A HTML</b></h2> <!-- Encabezado 2 -->
+        <h3><b>¿Qué es HTML?</b></h3> <!-- Encabezado 3 -->
+        <ul> <!-- Definimos una lista desordenada -->
             <li><b>HTML (HyperText Markup Language)</b> es el lenguaje de marcas para crear páginas web.</li>
             <li>Define la estructura de la página con etiquetas que el navegador interpreta para mostrar contenido.</li>
-        </ol>
-        <h3><b>Breve Historia</b></h3>
-        <ol>
+        </ul>
+        <h3><b>Breve Historia</b></h3> <!-- Encabezado 3 -->
+        <ol> <!-- Definimos una lista ordenada -->
             <li>Creado por <b>Tim Berners-Lee</b> en <b>1991</b></li>
             <li><b>HTML 2.0</b> (1996): Primer estándar oficial</li>
             <li><b>HTML5</b> (2014): Última versión con nuevas funcionalidades como soporte para video, audio y gráficos
@@ -58,34 +69,55 @@
         </ol>
     </article><br>
 
-    <article id="seccion2">
+    <article id="seccion2"> <!--ESTRUCTURA BÁSICA: Estrucura general de HTML-->
         <h2><b>ESTRUCTURA BÁSICA DE UN DOCUMENTO HTML</b></h2>
         <h3><b>Estructura general</b></h3>
-        <ol>
+        <ul>
             <li>Un documento HTML se basa en una estructura jerárquica de <b>etiquetas</b> que definen las diferentes
                 partes de una página.</li>
-            <li>Cada página HTML sigue una estructura similar, empezando por el <b>&lt;!DOCTYPE>&gt</b>; seguido de las
+            <li>Cada página HTML sigue una estructura similar, empezando por el <b>&lt;!DOCTYPE&gt;</b>; seguido de las
                 etiquetas &lt;html&gt;, &lt;head&gt;, &lt;body&gt;.</li>
-        </ol>
+            <!-- IMPORTANTE: Para que el editor no interprete los símbolos < > como código, se escribe &lt; para < y &gt; para > -->
+            <!-- &lt; = '<' /// &gt; = '>' -->
+
+        </ul>
     </article><br>
 
-    <article id="seccion3">
+    <article id="seccion3"> <!--ETIQUETAS BÁSICAS: Tabla donde explica el uso de las siguientes etiquetas-->
+        <!-- <title>, <h1>, <p>, <br>, <nsbp> -->
         <h2><b>ETIQUETAS BÁSICAS</b></h2>
-        <h3><b>&lt;title&gt;</b></h3>
-        <p>Define el título que aparece en la pestaña del navegador o en los
-            resultados de los buscadores.</p><br>
-
-        <h3><b>&lt;h1&gt;</b> a <b>&lt;h6&gt;</b></h3>
-        <p>Utilizados para definir títulos y subtítulos en la página web.</p><br>
-
-        <h3><b>&lt;p&gt;</b></h3>
-        <p>Se utiliza para definir bloques de texto en párrafos.</p><br>
-
-        <h3><b>&lt;br&gt;</b></h3>
-        <p>Fuerza el texto a empezar en una nueva línea.</p><br>
-
-        <h3><b>&amp;nbsp</b></h3>
-        <p>Inserta un espacio en blanco que no se rompe entre líneas.</p><br>
+        <table border="1" cellpadding="10" cellspacing="5">
+            <!-- Le añadimos valores a las propiedades de la tabla para que se vea más visual-->
+            <thead> <!-- Encabezado de la tabla-->
+                <th><b>&lt;title&gt;</b></th>
+                <th><b>&lt;h1&gt;</b> a <b>&lt;h6&gt;</b></th>
+                <th><b>&lt;p&gt;</b></th>
+                <th><b>&lt;br&gt;</b></th>
+                <th><b>&amp;nbsp</b></th>
+            </thead>
+            <tbody> <!--Cuerpo de la tabla-->
+                <tr>
+                    <ul>
+                        <td>
+                            <li>Define el título que aparece en la pestaña del navegador o en los
+                                resultados de los buscadores.</li>
+                        </td>
+                        <td>
+                            <li>Utilizados para definir títulos y subtítulos en la página web.</li>
+                        </td>
+                        <td>
+                            <li>Se utiliza para definir bloques de texto en párrafos.</li>
+                        </td>
+                        <td>
+                            <li>Fuerza el texto a empezar en una nueva línea.</li>
+                        </td>
+                        <td>
+                            <li>Inserta un espacio en blanco que no se rompe entre líneas.</li>
+                        </td>
+                    </ul>
+                </tr>
+            </tbody>
+        </table>
     </article><br>
 
     <article id="seccion4">
@@ -163,7 +195,9 @@
         </p>
     </article><br>
 
-    <article id="seccion6">
+    <article id="seccion6"> <!-- TEXTO FORMATEADO: Etiquetas -->
+        <!-- <b>, <strong>, <i>, <em>, <u>, <strike>, <s>, <sup>, <sub>-->
+
         <h2><b>TEXTO FORMATEADO</b></h2>
         <table border="1" cellpadding="10" cellspacing="5">
             <thead>
@@ -212,7 +246,7 @@
     </article><br>
 
     <article id="seccion7">
-        <h2><b>COMENTARIOS EN HTML</b></h2>
+        <h2><b>COMENTARIOS EN HTML</b></h2> <!--COMENTARIOS EN HTML: Como escribir comentarios y cuando usarlos-->
         <ul>
             <li>Los comentarios en HTML son líneas de texto que se añaden al código para dejar notas o explicaciones,
                 pero que no son visibles para los usuarios finales en la
@@ -224,6 +258,8 @@
     </article><br>
 
     <article id="seccion8">
+        <!--INSERCIÓN DE IMAGENES EN HTML: Como instrtar imágenes para que se vean visualmente en la página web-->
+        <!-- <img> -->
         <h2><b>INSERCIÓN DE IMAGENES EN HTML</b></h2>
         <ul>
             <li>La etiqueta <b>&lt;img&gt;</b> se utiliza para insertar imágenes en una página web.</li>
@@ -235,7 +271,7 @@
             <thead>
 
                 <th colspan="3"><b>Atributos de Imágenes</b></th>
-
+                <!--colspan se utiliza para que en vez de que se ve el cabezal en una sola columna, se pueda extender a las que haya en la tabla-->
                 <tr>
                     <th><b>src(source)</b></th>
                     <th><b>alt(alternate text)</b></th>
@@ -273,43 +309,11 @@
                 </tr>
             </tbody>
         </table>
-        <table border="2" cellpadding="5" cellspacing="2">
-            <thead>
-                <th style="color: red;"><strong>IMPORTANTE</strong></th>
 
-            </thead>
-            <tbody>
-                <tr>
-                    <td>
-                        <center><b>BUENAS PRÁCTICAS</b< /center>
-                    </td>
-                </tr>
-                <ul>
-                    <tr>
-                        <td>
-                            <li>Siempre utiliza el atributo alto para garantizar una buena
-                                accesibilidad y SEO.</li>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <li>Evita insertar imágenes muy grandes sin reducir su
-                                tamaño, ya que esto puede afectar al rendimiento de la página.</li>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <li>Si las imágenes son responsivas (se adaptan a diferentes
-                                dispositivos), utiliza porcentajes en lugar de píxeles por
-                                width y height.</li>
-                        </td>
-                    </tr>
-                </ul>
-            </tbody>
-        </table>
     </article><br>
 
-    <article id="seccion9">
+    <article id="seccion9"> <!-- ENLACES EN HTML: Como insertar enlaces en HTML y como manejarlos-->
+        <!-- <a> -->
         <h2><b>ENLACES EN HTML</b></h2>
         <ul>
             <li>La etiqueta <b>&lt;a&gt;</b> se utiliza para crear enlaces (links) a otras páginas web, documentos,
@@ -355,7 +359,8 @@
 
     </article><br>
 
-    <article id="seccion10">
+    <article id="seccion10"> <!--LISTAS EN HTML: Como crear listas ordenadas, no ordenadas y atributos-->
+        <!-- <ol>, <ul>, <li>-->
         <h2><b>LISTAS EN HTML</b></h2>
         <table border="1" cellpadding="10" cellspacing="5">
             <thead>
@@ -407,7 +412,8 @@
         </table>
     </article><br>
 
-    <article id="seccion11">
+    <article id="seccion11"> <!--TABLAS BÁSICAS CON HTML: Como crear tablas en HTML y como manejarlas-->
+        <!-- <table>, <thead>, <th>, <tbody>, <tr>, <td> -->
         <h2><b>TABLAS BÁSICAS CON HTML</b></h2>
         <ul>
             <li>La etiqueta <b>&lt;table&gt;</b> define la tabla y
@@ -439,6 +445,7 @@
     </article><br>
 
     <article id="seccion12">
+        <!--BUENAS PRÁCTICAS: Tabla explicatvia para dar a entender el buen uso de los elementos en HTML-->
         <h2 style="color: red;"><b>BUENAS PRÁCTICAS</b></h2>
         <table border="1" cellpadding="10" cellspacing="5" style="background-color: rgb(237, 177, 64);">
             <thead>
@@ -511,5 +518,7 @@
     </article><br>
 
 </body>
+<!--Fin del cuerpo-->
 
 </html>
+<!--fín del código-->
