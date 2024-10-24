@@ -17,20 +17,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Configura la ventana gráfica para un diseño responsive -->
 
-    <link rel="icon" href="Imagenes/html.png"> <!-- Define el logo -->
+    <link rel="icon" href="Imagenes/ex.png"> <!-- Define el logo -->
     <title>BUENAS PRÁCTICAS EN HTML</title>
     <!-- Define el título del documento que aparece en la pestaña del navegador -->
 </head>
 <!-- Fin del encabezado-->
 
 <body> <!-- Cuerpo -->
-    <p><a href="index.html" target="_self"><span style="color: black"><b><img src="Imagenes/flecha.png" alt="Volver al menú principal" width="50" height="50"></b></span></a>
+    <p><a href="index.html" target="_self"><span style="color: black"><b><img src="Imagenes/flecha.png"
+                        alt="Volver al menú principal" width="50" height="50"></b></span></a>
     </p>
     <center> <!-- Por ahora se utilizará <center> para estilizar un poco el texto mientras solo se usa HTML-->
         <h1><span style="color: black"><b>3. BUENAS PRÁCTICAS CON HTML</b></span></h1>
         <img src="Imagenes/ex.png" alt="HTML 5" width="300" height="300">
     </center>
     <hr>
+
+    <h1><b>OTROS APARTADOS</b></h1>
+    <ol>
+        <li><a href="htmlBasico.html" target="_self"><span style="color: black"><b>HTML Básico</b></span></a></li>
+        <br><br>
+        <!-- Enlace para apartado 1.HTML Básico, se debe agregar la URL -->
+
+        <li><a href="htmlAvan.html" target="_self"><span style="color: black"><b>HTML Avanzado</b></span></a></li><br>
+        <!-- Enlace para apartado 2.HTML Avanzado, se debe agregar la URL -->
+    </ol>
+
     <article>
         <p><b>ÍNDICE</b></p>
         <!-- Índice dividido en secciones con enlace directo a cada apartado del tema de HTML Básico -->
@@ -56,10 +68,10 @@
 
 
     <!--BUENAS PRÁCTICAS: Tabla explicatvia para dar a entender el buen uso de los elementos en HTML-->
-    <h2 style="color: red;"><strong>BUENAS PRÁCTICAS HTML</strong></h2>
-    <table border="1" cellpadding="10" cellspacing="5" style="background-color: rgb(172, 171, 170);">
+    <h2><span style="color: red;"><strong>BUENAS PRÁCTICAS HTML</strong></span></h2>
+    <table border="1" cellpadding="10" cellspacing="5" style="background-color: antiquewhite;">
         <thead>
-            <th style="color: red; font-style: italic;">IMPORTANTE: BUENAS PRÁCTICAS</th>
+            <th><span style="color: red; font-style: inherit;"> IMPORTANTE: BUENAS PRÁCTICAS</span></th>
         </thead>
         <tbody>
             <article id="seccion1"> <!-- 1. BUENAS PRÁCTICAS CON COMENTARIOS -->
@@ -284,23 +296,28 @@
                 <tr>
                     <td><strong>Buenas Prácticas con la Etiqueta &lt;iframes&gt;: </strong>
                         <ul>
-                            <li><b>Evita el uso excesivo de iframes:</b> El uso excesivo de iframes puede hacer que la página
+                            <li><b>Evita el uso excesivo de iframes:</b> El uso excesivo de iframes puede hacer que la
+                                página
                                 sea más lenta y más difícil de gestionar.
                                 Utilízalos sólo cuando sea necesario (como para incrustar contenido externo).</li><br>
-                            <li><b>Utiliza el atributo sandbox por seguridad:</b> Cuando incrustas contenido de otros sitios,
+                            <li><b>Utiliza el atributo sandbox por seguridad:</b> Cuando incrustas contenido de otros
+                                sitios,
                                 utiliza el atributo <b>sandbox</b> para
                                 limitar las acciones que el iframe puede realizar dentro de tu sitio web, mejorando la
                                 seguridad.</li><br>
-                            <li><b>Optimiza la altura y anchura:</b> Ajusta el tamaño del iframe para asegurarte de que el
+                            <li><b>Optimiza la altura y anchura:</b> Ajusta el tamaño del iframe para asegurarte de que
+                                el
                                 contenido se vea correctamente en
                                 todos los tamaños de pantalla, especialmente en dispositivos móviles.</li><br>
                             <li><b>Utiliza alternativas cuando sea posible:</b> Cuando sólo necesitas cargar contenido
                                 dinámico que puedes generar tú
                                 mismo (como un vídeo o una imagen), considera cargarlo directamente en la página en
                                 lugar de utilizar un iframe.</li><br>
-                            <li><b>Use allowfullscreen para vídeos:</b> Si estás incrustando vídeos, permite que se puedan
+                            <li><b>Use allowfullscreen para vídeos:</b> Si estás incrustando vídeos, permite que se
+                                puedan
                                 visualizar en pantalla
-                                completa con el atributo <b>allowfullscreen</b> para mejorar la experiencia del usuario.</li>
+                                completa con el atributo <b>allowfullscreen</b> para mejorar la experiencia del usuario.
+                            </li>
                     </td>
                 </tr>
             </article>
@@ -311,13 +328,15 @@
                         <ul>
                             <li><b>Use el conjunto de caracteres UTF-8</b> para garantizar que todos los caracteres
                                 especiales se muestren correctamente en todos los dispositivos y navegadores.</li><br>
-                                <li> <b>Incluye una descripción relevante</b> de la página para ayudar a los motores de búsqueda
+                            <li> <b>Incluye una descripción relevante</b> de la página para ayudar a los motores de
+                                búsqueda
                                 a comprender mejor el contenido y mejorar tu clasificación.</li><br>
-                                <li>  <b>Optimiza para móviles</b> utilizando la etiqueta <b>viewport</b> para asegurar que la
+                            <li> <b>Optimiza para móviles</b> utilizando la etiqueta <b>viewport</b> para asegurar que
+                                la
                                 página se adapte correctamente a distintos dispositivos.</li><br>
-                                <li>    <b>Incluye Open Graph Tags</b> si quieres que tu página se muestre de forma
+                            <li> <b>Incluye Open Graph Tags</b> si quieres que tu página se muestre de forma
                                 atractiva cuando se comparta en redes sociales.</li><br>
-                                <li>   <b>Use metadatos de robots</b> para controlar cómo quieres que los motores de
+                            <li> <b>Use metadatos de robots</b> para controlar cómo quieres que los motores de
                                 búsqueda indexen o no indexen tu página.</li>
                     </td>
                 </tr>
@@ -327,5 +346,7 @@
     <br>
 
 </body>
+<!-- Fin del cuerpo -->
 
 </html>
+<!-- Fin del código -->

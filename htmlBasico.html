@@ -23,15 +23,27 @@
 <!-- Fin del encabezado-->
 
 <body> <!-- Cuerpo -->
-    <p><a href="index.html" target="_self"><span style="color: black"><b><img src="Imagenes/flecha.png" alt="Volver al menú principal" width="50" height="50"></b></span></a>
+    <p><a href="index.html" target="_self"><span style="color: black"><b><img src="Imagenes/flecha.png"
+                        alt="Volver al menú principal" width="50" height="50"></b></span></a>
     </p>
     <center> <!-- Por ahora se utilizará <center> para estilizar un poco el texto mientras solo se usa HTML-->
         <h1><span style="color: black"><b>1. HTML BÁSICO</b></span></h1>
-        <img src="Imagenes/html5.png" alt="HTML 5" width="300" height="300">
+        <img src="Imagenes/html.png" alt="HTML 5" width="300" height="300">
     </center>
     <hr>
+
+    <h1><b>OTROS APARTADOS</b></h1>
+    <ol start="2">
+        <li><a href="htmlAvan.html" target="_self"><span style="color: black"><b>HTML Avanzado</b></span></a></li>
+        <br><br>
+        <!-- Enlace para apartado 2.HTML Avanzado, se debe agregar la URL -->
+        <li><a href="buenasPracticas.html" target="_self"><span style="color: black"><b>Buenas Prácticas con
+                        HTML</b></span></a></li>
+        <!-- Enlace para apartado 3. Buenas Prácticas HTML, se debe agregar la URL -->
+    </ol><br>
+
     <article>
-        <p><b>ÍNDICE</b></p>
+        <h1><b>ÍNDICE</b></h1>
         <!-- Índice dividido en secciones con enlace directo a cada apartado del tema de HTML Básico -->
 
         <ol type="1">
@@ -78,9 +90,9 @@
                 etiquetas &lt;html&gt;, &lt;head&gt;, &lt;body&gt;.</li>
             <!-- IMPORTANTE: Para que el editor no interprete los símbolos < > como código, se escribe &lt; para < y &gt; para > -->
             <!-- &lt; = '<' /// &gt; = '>' -->
-
         </ul>
-    </article><br>
+        <center><img src="Apuntes/estBasica.png" alt="Estructura Básica"></center>
+    </article><br><br>
 
     <article id="seccion3"> <!--ETIQUETAS BÁSICAS: Tabla donde explica el uso de las siguientes etiquetas-->
         <!-- <title>, <h1>, <p>, <br>, <nsbp> -->
@@ -117,72 +129,84 @@
                 </tr>
             </tbody>
         </table>
-    </article><br>
+        <br>
+    </article><br><br>
 
-    <article id="seccion4">
+    <article id="seccion4"> <!-- ELEMENTOS HTML Y ANIDAMIENTOS: Elementos en HTML y como usarlos -->
         <h2><b>ELEMENTOS HTML Y ANIDAMIENTOS</b></h2>
-        <h3><b>Diferencia entre Etiquetas y Elementos</b></h3><br>
-        <table border="1" cellpadding="10" cellspacing="5">
-            <thead>
-                <th><b>
-                        <center>Etiqueta (Tag)</center>
-                    </b></th>
-                <th><b>
-                        <center>Elemento</center>
-                    </b></th>
-                <th><b>
-                        <center>Elemetnos anidados</center>
-                    </b></th>
-            </thead>
-            <tbody>
-                <tr>
-                    <ul>
+        <h3><b>Diferencia entre Etiquetas y Elementos</b></h3>
+        <center>
+            <table border="1" cellpadding="10" cellspacing="5">
+                <thead>
+                    <th><b>
+                            Etiqueta (Tag)
+                        </b></th>
+                    <th><b>
+                            Elemento
+                        </b></th>
+                    <th><b>
+                            Elementos anidados
+                        </b></th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <ul>
+                            <td> <!-- Etiqueta (Tag) -->
+
+                                <li>Es la parte que define el inicio y el final de un componente en HTML.</li>
+
+                            </td>
+                            <td> <!-- Elemento -->
+
+                                <li>Un <b>elemento</b> incluye la etiqueta de apertura, el contenido (si lo hubiere), y
+                                    la
+                                    etiqueta de cierre.</li>
+
+                            </td>
+                            <td> <!-- Elementos anidados -->
+
+                                <li><b>Anidamente</b> se refiere a colocar un
+                                    elemento HTML dentro de otro
+                                    elemento.
+
+                            </td>
+                        </ul>
+                    </tr>
+                    <tr>
+                        <ul>
+                            <td> <!-- Etiqueta (Tag) -->
+
+                                <li>Se delimita con los símbolos &lt;&gt;.
+                                    Ejemplos: &lt;p&gt;, &lt;/p&gt, &lt;h1&gt, &lt;/h1&gt.</li>
+
+                            </td>
+                            <td> <!-- Elemento -->
+
+                                <li>Los elementos pueden estar vacíos o contener otros
+                                    elementos dentro.</li>
+
+                            </td>
+                            <td> <!-- Elementos anidados -->
+
+                                <li>Es importante seguir correctamente
+                                    el orden de las etiquetas: la primera
+                                    que se abre es la última que se cierra.</li>
+
+                            </td>
+                        </ul>
+                    </tr>
+                    <tr>
                         <td>
-
-                            <li>Es la parte que define el inicio y el final de un componente en HTML.</li>
-
+                            <img src="Apuntes/tag.png" alt="Etiquetas (Tag)" width="250" height="50">
                         </td>
-                        <td>
-
-                            <li>Un <b>elemento</b> incluye la etiqueta de apertura, el contenido (si lo hubiere), y la
-                                etiqueta de cierre.</li>
-
+                        <td> <img src="Apuntes/elemento.png" alt="Elemento" width="250" height="50"></td>
+                        <td> <img src="Apuntes/etiquetasBasicas.png" alt="Elementos anidados" width="300" height="250">
                         </td>
-                        <td>
+                    </tr>
+                </tbody>
 
-                            <li><b>Anidamente</b> se refiere a colocar un
-                                elemento HTML dentro de otro
-                                elemento.
-
-                        </td>
-                    </ul>
-                </tr>
-                <tr>
-                    <ul>
-                        <td>
-
-                            <li>Se delimita con los símbolos &lt;&gt;.
-                                Ejemplos: &lt;p&gt;, &lt;/p&gt, &lt;h1&gt, &lt;/h1&gt.</li>
-
-                        </td>
-                        <td>
-
-                            <li>Los elementos pueden estar vacíos o contener otros
-                                elementos dentro.</li>
-
-                        </td>
-                        <td>
-
-                            <li>Es importante seguir correctamente
-                                el orden de las etiquetas: la primera
-                                que se abre es la última que se cierra.</li>
-
-                        </td>
-                    </ul>
-                </tr>
-            </tbody>
-
-        </table>
+            </table>
+        </center>
     </article><br>
 
     <article id="seccion5">
@@ -192,56 +216,60 @@
             siguen el formato
             <b>nombre="valor"</b>.
         </p>
+        <center><img src="Apuntes/atributos.png" alt="Elementos anidados" width="1000" height="450"></center>
     </article><br>
 
     <article id="seccion6"> <!-- TEXTO FORMATEADO: Etiquetas -->
         <!-- <b>, <strong>, <i>, <em>, <u>, <strike>, <s>, <sup>, <sub>-->
 
         <h2><b>TEXTO FORMATEADO</b></h2>
-        <table border="1" cellpadding="10" cellspacing="5">
-            <thead>
-                <th><b>&lt;b&gt; y &lt;strong&gt;: Negrita</b></th>
-                <th><b>&lt;i&gt; y &lt;em&gt;: Cursiva</b></th>
-                <th><b>&lt;u&gt;: Subrayado</b></th>
-                <th><b>&lt;strike&gt; o &lt;s&gt;: Texto rayado</b></th>
-                <th><b>&lt;sup&gt;: Superíndice</b></th>
-                <th><b>&lt;sub&gt;: Subíndice</b></th>
-            </thead>
-            <tbody>
-                <tr>
-                    <ul>
-                        <td>
-                            <li><b>&lt;b&gt;</b> aplica negrita sin indicar ninguna importancia semántica.</li><br>
-                            <li><b>&lt;strong&gt;</b> aplica negrita e indica que el texto es importante.</li>
-                        </td>
+        <center>
+            <table border="1" cellpadding="10" cellspacing="5">
+                <thead>
+                    <th><b>&lt;b&gt; y &lt;strong&gt;: Negrita</b></th>
+                    <th><b>&lt;i&gt; y &lt;em&gt;: Cursiva</b></th>
+                    <th><b>&lt;u&gt;: Subrayado</b></th>
+                    <th><b>&lt;strike&gt; o &lt;s&gt;: Texto rayado</b></th>
+                    <th><b>&lt;sup&gt;: Superíndice</b></th>
+                    <th><b>&lt;sub&gt;: Subíndice</b></th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <ul>
+                            <td>
+                                <li><b>&lt;b&gt;</b> aplica negrita sin indicar ninguna importancia semántica.</li><br>
+                                <li><b>&lt;strong&gt;</b> aplica negrita e indica que el texto es importante.</li>
+                            </td>
 
-                        <td>
-                            <li><b>&lt;i&gt;</b> aplica cursiva sin implicar énfasis.</li><br>
-                            <li><b>&lt;em&gt;</b> aplica cursiva con énfasis, indicando que el texto tiene importancia.
-                            </li>
+                            <td>
+                                <li><b>&lt;i&gt;</b> aplica cursiva sin implicar énfasis.</li><br>
+                                <li><b>&lt;em&gt;</b> aplica cursiva con énfasis, indicando que el texto tiene
+                                    importancia.
+                                </li>
 
-                        </td>
+                            </td>
 
-                        <td>
-                            <li>Se utiliza para subrayar texto.</li>
-                        </td>
-                        <td>
-                            <li>Aplica un rayado en el texto, indicando que está borrado o ya no es relevante.</li>.
-                        </td>
-                        <td>
-                            <li>Se utiliza para elevar el texto como en exponentes matemáticos.</li>
-                        </td>
-                        <td>
-                            <li>Se utiliza para poner texto en la posición de subíndice, a menudo utilizado en
-                                fórmulas químicas.</li>
-                        </td>
+                            <td>
+                                <li>Se utiliza para subrayar texto.</li>
+                            </td>
+                            <td>
+                                <li>Aplica un rayado en el texto, indicando que está borrado o ya no es relevante.</li>.
+                            </td>
+                            <td>
+                                <li>Se utiliza para elevar el texto como en exponentes matemáticos.</li>
+                            </td>
+                            <td>
+                                <li>Se utiliza para poner texto en la posición de subíndice, a menudo utilizado en
+                                    fórmulas químicas.</li>
+                            </td>
 
-                    </ul>
+                        </ul>
 
-                </tr>
-            </tbody>
+                    </tr>
+                </tbody>
 
-        </table>
+            </table>
+        </center>
     </article><br>
 
     <article id="seccion7">
@@ -254,7 +282,8 @@
                 dejar indicaciones para futuros desarrolladores.</li>
             <li>Los comentarios no afectan al rendimiento ni a la visualización de la página en el navegador.</li>
         </ul>
-    </article><br>
+        <center><img src="Apuntes/comentarios.png" alt="Comentarios" width="600" height="300"></center>
+    </article><br><br>
 
     <article id="seccion8">
         <!--INSERCIÓN DE IMAGENES EN HTML: Como instrtar imágenes para que se vean visualmente en la página web-->
@@ -266,48 +295,50 @@
             <li>Es esencial proporcionar información sobre la imagen para que se muestre correctamente y para mejorar la
                 accesibilidad.</li>
         </ul><br>
-        <table border="1" cellpadding="10" cellspacing="5">
-            <thead>
+        <center>
+            <table border="1" cellpadding="10" cellspacing="5">
+                <thead>
 
-                <th colspan="3"><b>Atributos de Imágenes</b></th>
-                <!--colspan se utiliza para que en vez de que se ve el cabezal en una sola columna, se pueda extender a las que haya en la tabla-->
-                <tr>
-                    <th><b>src(source)</b></th>
-                    <th><b>alt(alternate text)</b></th>
-                    <th><strong>width</strong> y <strong>height</strong></th>
-                </tr>
-            </thead>
-            <tbody>
-                <ul>
+                    <th colspan="3"><b>Atributos de Imágenes</b></th>
+                    <!--colspan se utiliza para que en vez de que se ve el cabezal en una sola columna, se pueda extender a las que haya en la tabla-->
                     <tr>
-                        <td>
-                            <li>Define la <b>fuente</b> o el camino de la imagen.</li>
-                        </td>
-                        <td>
-                            <li>Proporciona un <b>texto alternativo</b> que se muestra
-                                si la imagen no se carga o es leída por
-                                lectores de pantalla.</li>
-                        </td>
-                        <td>
-                            <li>Especifica el <b>ancho</b> (width) y la <b>altura</b>
-                                (height) de la imagen en píxeles o porcentajes.</li>
-                        </td>
+                        <th><b>src(source)</b></th>
+                        <th><b>alt(alternate text)</b></th>
+                        <th><strong>width</strong> y <strong>height</strong></th>
                     </tr>
-                    <tr>
-                        <td>
-                            <li>Puede ser un camino relativo o una URL completa.</li>
-                        </td>
-                        <td>
-                            <li>Es fundamental para la <b>accesibilidad</b> y <b>SEO</b>.</li>
-                        </td>
-                        <td>
-                            <li>Es importante para controlar el tamaño de la
-                                imagen en la página.</li>
-                        </td>
-                </ul>
-                </tr>
-            </tbody>
-        </table>
+                </thead>
+                <tbody>
+                    <ul>
+                        <tr>
+                            <td>
+                                <li>Define la <b>fuente</b> o el camino de la imagen.</li>
+                            </td>
+                            <td>
+                                <li>Proporciona un <b>texto alternativo</b> que se muestra
+                                    si la imagen no se carga o es leída por
+                                    lectores de pantalla.</li>
+                            </td>
+                            <td>
+                                <li>Especifica el <b>ancho</b> (width) y la <b>altura</b>
+                                    (height) de la imagen en píxeles o porcentajes.</li>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <li>Puede ser un camino relativo o una URL completa.</li>
+                            </td>
+                            <td>
+                                <li>Es fundamental para la <b>accesibilidad</b> y <b>SEO</b>.</li>
+                            </td>
+                            <td>
+                                <li>Es importante para controlar el tamaño de la
+                                    imagen en la página.</li>
+                            </td>
+                    </ul>
+                    </tr>
+                </tbody>
+            </table>
+        </center>
 
     </article><br>
 
@@ -325,36 +356,41 @@
             <li>El texto entre la etiqueta de apertura y la de cierre es el que los usuarios verán y podrán pulsar para
                 ser redirigidos.</li>
         </ul>
-        <table border="1" cellpadding="10" cellspacing="5">
-            <thead>
-                <th colspan="2"><strong>ATRIBUTOS DE LOS ENLACES</strong></th>
-            </thead>
-            <tbody>
-                <tr>
-                    <ol>
-                        <td><b>href(hypertext reference):</b>
-                            <ul>
-                                <li>Define la <b>URL</b> de destinación de enlace.</li>
-                                <li>Puede ser un enlace absoluto (una URL completa) o relativa (camino dentro del mismo
-                                    dominio).</li>
-                            </ul>
-                        </td>
-                        <td><b>target:</b>
-                            <ul>
-                                <li>Define <b>donde se abrirá</b> el enlace: en la misma pestaña, en una pestaña nueva o
-                                    en un nueva ventana.</li>
-                                <li>Los valors más habitules son:</li>
+        <center>
+            <table border="1" cellpadding="10" cellspacing="5">
+                <thead>
+                    <th colspan="2"><strong>ATRIBUTOS DE LOS ENLACES</strong></th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <ol>
+                            <td><b>href(hypertext reference):</b>  <!-- href -->
                                 <ul>
-                                    <li><b>_blank:</b> Abre el enlace en una <b>nueva pestaña</b></li>
-                                    <li><b>_self:</b> Abre el enlace en la <b>misma pestaña</b> (valor predeterminado)
-                                    </li>
+                                    <li>Define la <b>URL</b> de destinación de enlace.</li>
+                                    <li>Puede ser un enlace absoluto (una URL completa) o relativa (camino dentro del
+                                        mismo
+                                        dominio).</li>
                                 </ul>
-                            </ul>
-                        </td>
-                    </ol>
-                </tr>
-            </tbody>
-        </table>
+                            </td>
+                            <td><b>target:</b>  <!-- target -->
+                                <ul>
+                                    <li>Define <b>donde se abrirá</b> el enlace: en la misma pestaña, en una pestaña
+                                        nueva o
+                                        en un nueva ventana.</li>
+                                    <li>Los valors más habitules son:</li>
+                                    <ul>
+                                        <li><b>_blank:</b> Abre el enlace en una <b>nueva pestaña</b></li>
+                                        <li><b>_self:</b> Abre el enlace en la <b>misma pestaña</b> (valor
+                                            predeterminado)
+                                        </li>
+                                    </ul>
+                                </ul>
+                            </td>
+                        </ol>
+                    </tr>
+                </tbody>
+            </table>
+        </center>
 
     </article><br>
 
@@ -363,15 +399,15 @@
         <h2><b>LISTAS EN HTML</b></h2>
         <table border="1" cellpadding="10" cellspacing="5">
             <thead>
-                <th><b>Listas No Ordenadas (&lt;ul&&gt;):</b></th>
-                <th><b>Listas Ordenadas (&lt;ol&&gt;):</b></th>
-                <th><b>Atributos de listas: </b></th>
+                <th><b>Listas No Ordenadas (&lt;ul&&gt;)</b></th>
+                <th><b>Listas Ordenadas (&lt;ol&&gt;)</b></th>
+                <th><b>Atributos de listas </b></th>
 
             </thead>
             <tbody>
                 <ol>
                     <tr>
-                        <td>
+                        <td>  <!-- Listas No Ordenadas -->
                             <li>Se utilizan para listas de elementos sin orden
                                 específico.</li><br>
                             <li>Los elementos se muestran con viñetas u otros
@@ -379,7 +415,7 @@
                             <li>Cada elemento de la lista se define con la etiqueta
                                 &lt;li&gt; (list item).</li>
                         </td>
-                        <td>
+                        <td>  <!-- Listas Ordenadas -->
                             <li>Se utilizan para listas en las que el orden de los
                                 elementos es relevante.</li><br>
                             <li>Los elementos se numeran automáticamente (1, 2,
@@ -387,7 +423,7 @@
                             <li>Cada elemento de la lista también se define con
                                 &lt;li&gt;.</li>
                         </td>
-                        <td>
+                        <td>  <!-- Atributos de listas -->
                             <li><b>Atributo type (para listas ordenadas &lt;ol&gt;):</b></li>
                             <ul>
                                 <li>Se puede utilizar para definir el tipo de numeración de la lista:</li>
@@ -416,34 +452,35 @@
         <h2><b>TABLAS BÁSICAS CON HTML</b></h2>
         <ul>
             <li>La etiqueta <b>&lt;table&gt;</b> define la tabla y
-                actúa como el contenedor principal.</li><br>
-            <li>La etiqueta <b>&lt;tr&gt;</b> define una fila dentro de la tabla.</li><br>
-            <li>La etiqueta <b>&lt;td&gt;</b> crea una celda dentro de una fila de la trabla (datos de la tabla).</li>
+                actúa como el contenedor principal.</li><br>  <!-- <table> -->
+            <li>La etiqueta <b>&lt;tr&gt;</b> define una fila dentro de la tabla.</li><br>  <!-- <tr> -->
+            <li>La etiqueta <b>&lt;td&gt;</b> crea una celda dentro de una fila de la trabla (datos de la tabla).</li>  <!-- <td> -->
             <br>
 
             <li>La etiqueta <b>&lt;thead&gt; (table head)</b> define el encabezamiento de la tabla, agrupando las
                 filas de encabezamiento (habitualmente las que
-                contienen &lt;th&gt;).</li><br>
+                contienen &lt;th&gt;).</li><br> <!-- <thead> -->
 
             <li>La etiqueta <b>&lt;tbody&gt; (table body)</b> agrupa el cuerpo de la mesa, es decir, las filas de
                 datos. Se suele utilizar para separar los datos de los
-                encabezamientos.</li>
+                encabezamientos.</li>  <!-- <tbody> -->
             <br>
             <li>La etiqueta <b>&lt;th&gt; (table header)</b> Se utiliza para crear una celda de encabezamiento en
                 una mesa. El texto dentro de &lt;th&gt; aparece en negrita y
-                centrado por defecto.</li><br>
+                centrado por defecto.</li><br>  <!-- <th> -->
 
         </ul>
-        <p><b>Atributos de Tabla:</b></p>
+        <p><b>Atributos de Tabla:</b></p>  <!-- Atributos de Tabla -->
         <ol>
-            <li><strong>border:</strong> añade un borde a la mesa ya las celdas.</li>
+            <li><strong>border:</strong> añade un borde a la mesa ya las celdas.</li>  <!-- border -->
             <li><strong>cellpadding:</strong> Define el espacio entre el contenido de la celda y
-                el borde de la celda.</li>
-            <li><strong>cellspacing</strong>Controla el espacio entre las celdas de la mesa.</li>
+                el borde de la celda.</li>  <!-- cellpadding -->
+            <li><strong>cellspacing</strong>Controla el espacio entre las celdas de la mesa.</li>  <!-- cellspacing -->
         </ol>
+        <center><img src="Apuntes/tablas.png" alt="Tablas" width="450" height="300"></center>
     </article><br>
 </body>
 <!--Fin del cuerpo-->
 
 </html>
-<!--fín del código-->
+<!--Fin del código-->
