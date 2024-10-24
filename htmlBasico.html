@@ -23,12 +23,11 @@
 <!-- Fin del encabezado-->
 
 <body> <!-- Cuerpo -->
+    <p><a href="index.html" target="_self"><span style="color: black"><b><img src="Imagenes/flecha.png" alt="Volver al menú principal" width="50" height="50"></b></span></a>
+    </p>
     <center> <!-- Por ahora se utilizará <center> para estilizar un poco el texto mientras solo se usa HTML-->
         <h1><span style="color: black"><b>1. HTML BÁSICO</b></span></h1>
-    </center>
-    <center>
-        <p><a href="index.html" target="_self"><span style="color: black"><b>Volver al menú de apuntes</b></span></a>
-        </p>
+        <img src="Imagenes/html5.png" alt="HTML 5" width="300" height="300">
     </center>
     <hr>
     <article>
@@ -36,18 +35,18 @@
         <!-- Índice dividido en secciones con enlace directo a cada apartado del tema de HTML Básico -->
 
         <ol type="1">
-            <li><a href="#seccion1">Introducción a HTML</a></li>
-            <li><a href="#seccion2">Estructura Básica de un documento HTML</a></li>
-            <li><a href="#seccion3">Etiquetas Básicas</a></li>
-            <li><a href="#seccion4">Elementos HTML y Anidamiento</a></li>
-            <li><a href="#seccion5">Atributos HTML</a></li>
-            <li><a href="#seccion6">Texto formateado</a></li>
-            <li><a href="#seccion7">Comentarios en HTML</a></li>
-            <li><a href="#seccion8">Inserción de Imágenes</a></li>
-            <li><a href="#seccion9">Enlaces</a></li>
-            <li><a href="#seccion10">Listas</a></li>
-            <li><a href="#seccion11">Tablas</a></li>
-            <li><a href="#seccion12">Buenas prácticas</a></li>
+            <li><a href="#seccion1">Introducción a HTML</a></li><br>
+            <li><a href="#seccion2">Estructura Básica de un documento HTML</a></li><br>
+            <li><a href="#seccion3">Etiquetas Básicas</a></li><br>
+            <li><a href="#seccion4">Elementos HTML y Anidamiento</a></li><br>
+            <li><a href="#seccion5">Atributos HTML</a></li><br>
+            <li><a href="#seccion6">Texto formateado</a></li><br>
+            <li><a href="#seccion7">Comentarios en HTML</a></li><br>
+            <li><a href="#seccion8">Inserción de Imágenes</a></li><br>
+            <li><a href="#seccion9">Enlaces</a></li><br>
+            <li><a href="#seccion10">Listas</a></li><br>
+            <li><a href="#seccion11">Tablas</a></li><br>
+            <li><a href="#seccion12">Buenas prácticas</a></li><br>
         </ol>
     </article><br>
 
@@ -443,80 +442,6 @@
             <li><strong>cellspacing</strong>Controla el espacio entre las celdas de la mesa.</li>
         </ol>
     </article><br>
-
-    <article id="seccion12">
-        <!--BUENAS PRÁCTICAS: Tabla explicatvia para dar a entender el buen uso de los elementos en HTML-->
-        <h2 style="color: red;"><b>BUENAS PRÁCTICAS</b></h2>
-        <table border="1" cellpadding="10" cellspacing="5" style="background-color: rgb(237, 177, 64);">
-            <thead>
-                <th style="color: red; font-style: italic;">IMPORTANTE: BUENAS PRÁCTICAS</th>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><b>Buenas Prácticas con Comentarios:</b>
-                        <ul>
-                            <li>Mantenerlos claros y concisos: Los comentarios deben
-                                ser breves y proporcionar información útil.</li><br>
-                            <li>Evitar comentarios excesivos: Sólo añade
-                                comentarios donde sea necesario para evitar sobrecargar
-                                el código.</li><br>
-                            <li>No dejar comentarios innecesarios en producción: Los
-                                comentarios en entornos de desarrollo pueden ser
-                                útiles, pero en código de producción es mejor dejar sólo
-                                los esenciales.</li><br>
-                        </ul>
-
-                    </td>
-
-                </tr>
-                <tr>
-                    <td><b>Buenas Prácticas con Imágenes:</b>
-                        <ul>
-                            <li><b>Siempre se utiliza el atributo alt</b> para garantizar una buena
-                                accesibilidad y SEO.</li><br>
-                            <li>Evita insertar imágenes muy grandes sin reducir su
-                                tamaño, ya que esto puede afectar al rendimiento de la página.</li><br>
-                            <li>Si las imágenes son responsivas (se adaptan a diferentes
-                                dispositivos), utiliza <b>porcentajes</b> en lugar de píxeles por
-                                width y height.</li><br>
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td><b>Buenas Prácticas con Enlaces: </b>
-                        <ul>
-                            <li>Use <b>enlaces descriptivos</b> en lugar de genéricos como
-                                "Clica aquí". Esto mejora la accesibilidad y el SEO.</li><br>
-                            <ul>
-                                <li><b>Correcto: </b>"Visita la página de <b>Contacto</b>"</li>
-                                <li><b>Incorrecto: </b>"Clica aquí"</li><br>
-                            </ul>
-                            <li>Use <b>target="_blank"</b> sólo cuando sea realmente
-                                necesario, ya que abrir enlaces en nuevas pestañas
-                                puede confundir a algunos usuarios.</li><br>
-                            <li>Siempre asegúrate de que los <b>enlaces sean
-                                    accesibles</b> añadiendo una descripción adecuada para
-                                usuarios con lectores de pantalla.</li><br>
-                        </ul>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td><b>Buenas Prácticas con Listas: </b>
-                        <ul>
-                            <li>Use <b>listas no ordenadas (&lt;ul&gt;)</b> cuando el orden de los
-                                ítems no sea importante.</li><br>
-                            <li>Use <b>listas ordenadas (&lt;ol&gt;)</b> cuando el orden sea
-                                relevante.</li><br>
-                            <li>Personaliza las listas según las necesidades visuales o
-                                estilísticas utilizando los atributos adecuados.</li><br>
-                        </ul>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-    </article><br>
-
 </body>
 <!--Fin del cuerpo-->
 
