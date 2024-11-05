@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<!-- Insertar imagenes de cada apartado -->
+
+<html lang="en">
+<!-- Define el idioma del contenido del documento -->
+
+<head> <!-- Encabezado-->
+    <meta charset="UTF-8"> <!-- Establece la codificación de caracteres a UTF-8 -->
+    <meta name="author" content="Samuel Henares Choaibi"><!-- Define el autor del documento -->
+    <meta name="description" content="Apuntes CSS Básico">
+    <!-- Proporciona una descripción del contenido del documento para SEO -->
+    <meta property="og:url" content="Apuntes CSS Básico-Samuel Henares Choaibi">
+    <!-- Define la URL del documento para Open Graph (redes sociales) -->
+    <meta name="robots" content="index, follow">
+    <!-- Indica a los motores de búsqueda que indexen la página, debería ser 'index, follow' -->
+    <meta name="keywords" content="CSS, CSS Básico"> <!-- Palabras clave para SEO -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Configura la ventana gráfica para un diseño responsive -->
+
+    <link rel="icon" href="Imagenes/csslogo.png"> <!-- Define el logo -->
+    <title>CSS Básico</title> <!-- Define el título del documento que aparece en la pestaña del navegador -->
+</head>
+<!-- Fin del encabezado-->
+
+<body> <!-- Cuerpo -->
+    <p><a href="index.html" target="_self"><span style="color: black"><b><img src="Imagenes/flecha.png"
+                        alt="Volver al menú principal" width="50" height="50"></b></span></a>
+    </p>
+    <center> <!-- Por ahora se utilizará <center> para estilizar un poco el texto mientras solo se usa HTML-->
+        <h1><span style="color: black"><b>5. CSS BÁSICO</b></span></h1>
+        <img src="Imagenes/csslogo.png" alt="CSS" width="25%" height="25%">
+    </center>
+    <hr>
+
+    <h1><b>OTROS APARTADOS</b></h1>
+    <ol>
+        <li><a href="htmlBasico.html" target="_self"><span style="color: black"><b>HTML Básico</b></span></a></li>
+        <br><br>
+        <!-- Enlace para apartado 1.HTML Básico, se debe agregar la URL -->
+
+        <li><a href="htmlAvan.html" target="_self"><span style="color: black"><b>HTML Avanzado</b></span></a></li>
+        <br><br>
+        <!-- Enlace para apartado 2.HTML Avanzado, se debe agregar la URL -->
+
+        <li><a href="buenasPracticas.html" target="_self"><span style="color: black"><b>Buenas Prácticas con
+                        HTML</b></span></a></li><br><br>
+        <!-- Enlace para apartado 3. Buenas Prácticas HTML, se debe agregar la URL -->
+
+        <li><a href="conceptosDos.html" target="_self"><span style="color: black"><b>Nuevos conceptos en
+                        HTML</b></span></a>
+        </li>
+        <!-- Enlace para apartado 4. Nuevos conceptos, se debe agregar la URL -->
+
+    </ol><br>
+
+    <article>
+        <h1><b>ÍNDICE</b></h1>
+        <!-- Índice dividido en secciones con enlace directo a cada apartado del tema de HTML Básico -->
+
+        <ol type="1">
+            <li><a href="#seccion1">Introducción a CSS</a></li><br>
+            <li><a href="#seccion2">Aplicación de Estilos</a></li><br>
+            <li><a href="#seccion3">Sintaxi Básica de CSS</a></li><br>
+            <li><a href="#seccion4">Propiedades de texto y fuentes</a></li><br>
+            <li><a href="#seccion5">Margenes, rellenos y bordes</a></li><br>
+            <li><a href="#seccion6">Colores y fondos</a></li><br>
+            <li><a href="#seccion7">Dimensiones y cajas</a></li><br>
+            <li><a href="#seccion8">posicionamiento básico</a></li><br>
+            <li><a href="#seccion9">Diseño básico con Flexbox</a></li><br>
+            <li><a href="#seccion10">Media Queries (Introducción)</a></li><br>
+        </ol>
+    </article><br>
+
+    <article id="seccion1"> <!--INTRODUCCIÓN A CSS: Breve introducción del lenguaje-->
+        <h2><strong>INTRODUCCIÓN A CSS</strong></h2> <!-- Encabezado 2 -->
+        <h3><strong>¿Qué es CSS?</strong></h3> <!-- Encabezado 3 -->
+        <p><b>CSS (<i>Cascading Style Sheets</i>)</b> es un lenguaje de hojas de estilo que se utiliza para controlar la
+            presentación y diseño de los documentos web escritos en HTML. Mientras que HTML proporciona
+            la estructura del contenido, CSS define cómo visualizar este contenido en términos de
+            diseño, colores, tipografía, espaciado y posicionamiento de los elementos en una página.</p>
+        <br>
+        <h3><strong>Importancia del CSS en el desarrollo web</strong></h3> <!-- Encabezado 3 -->
+        <p><b>CSS</b> es una pieza fundamental del desarrollo web, ya que permite separar la presentación visual del
+            contenido estructural de una página. Esto ofrece una serie de ventajas:</p>
+        <ol> <!-- Definimos una lista ordenada -->
+            <li><b>Diseño y estética mejorados:</b> Con CSS, puedes aplicar estilos atractivos y profesionales en las
+                páginas web, haciéndolas visualmente atractivas y más fáciles de leer y navegar.</li><br>
+            <li><b>Separación de contenido y estilo:</b> Gracias al CSS, es posible mantener los estilos de presentación
+                (como colores, tamaños de texto, márgenes) fuera del código HTML, lo que facilita el mantenimiento y la
+                actualización del diseño sin
+                afectar a la estructura del contenido.</li><br>
+            <li><b>Facilidad de mantenimiento:</b> Con un solo archivo CSS, puedes aplicar estilos a múltiples páginas
+                web, ahorrando tiempo y esfuerzo cuando se hacen cambios de diseño. Esto permite una actualización y
+                mantenimiento mucho más eficiente.</li><br>
+            <li><b>Mejor experiencia de usuario:</b> Con CSS se pueden crear diseños adaptables (responsive) que
+                funcionan bien en diferentes dispositivos, como móviles, tabletas y ordenadores de sobremesa. Este tipo
+                de diseño mejora
+                significativamente la experiencia de el usuario.</li><br>
+            <li><b>Rendimiento y velocidad:</b> Utilizar archivos CSS externos puede ayudar a cargar las páginas web más
+                rápidamente, ya que los navegadores pueden almacenar en caché estos archivos y reutilizarlos en varias
+                páginas, ahorrando ancho
+                de banda y tiempo de carga.</li><br>
+        </ol>
+    </article><br>
+
+    <article id="seccion2"> <!--APLICACIÓN DE ESTILOS: Que estilos hay y como se aplican con CSS-->
+        <h2><strong>APLICACIÓN DE ESTILOS</strong></h2> <!-- Encabezado 2 -->
+        <p>El CSS se puede aplicar a un documento HTML de tres formas principales: <b>online, incrustado</b> (dentro del
+            HTML) y <b>externo</b> (mediante un archivo CSS separado). Cada una de estas formas tiene sus propósitos y
+            usos.</p>
+        <br>
+        <table border="3" cellpadding="10" cellspacing="5">
+            <thead>
+                <th>Estilos</th>
+                <th>Definición</th>
+                <th>Ventajas</th>
+                <th>Desventajas</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><b>Estilos en línea (Inline styles)</b></td>
+                    <td>Los estilos en línea se aplican directamente a un elemento HTML, utilizando el atributo style
+                        dentro de la misma etiqueta de el elemento. Este método es adecuado para aplicar estilos a un
+                        solo elemento de forma rápida,
+                        pero no es recomendable para páginas grandes, dificultando la mantenibilidad.</td>
+                    <ul>
+                        <td>
+                            <li>Aplicación rápida y directa al elemento.</li>
+                        </td>
+                    </ul>
+                    <ul>
+                        <td>
+                            <li>Dificulta la mantenibilidad en sitios webs grandes porque habría que aplicar
+                                el estilo en cada elemento manualmente.</li><br>
+                            <li>No aprovecha la capacidad de reutilizar los estilos.</li>
+                        </td>
+                    </ul>
+                </tr>
+
+                <tr>
+                    <td><b>Estilos incrustados (Embedded styles)</b></td>
+                    <td>Los estilos incrustados se colocan dentro de la sección &lt;head&gt; de un documento HTML,
+                        dentro de una etiqueta &lt;style&gt;. Estos estilos se aplican a todos los elementos HTML de la
+                        página actual.</td>
+                    <ul>
+                        <td>
+                            <li>Más eficiente que los estilos online, ya que se pueden aplicar estilos a varios
+                                elementos de una misma página desde uno solo sitio.</li>
+                        </td>
+                    </ul>
+                    <ul>
+                        <td>
+                            <li>Sólo afecta a la página donde se aplica, no se
+                                reutiliza entre varias páginas.</li><br>
+                            <li>Si la página crece demasiado, puede hacer más difícil
+                                la lectura y mantenimiento.</li>
+                        </td>
+                    </ul>
+                </tr>
+
+                <tr>
+                    <td><b>Estilos externos (External stylesheets)</b></td>
+                    <td>Los estilos externos se almacenan en un archivo CSS separado, y se enlazan al documento HTML
+                        utilizando la etiqueta
+                        <link>
+                        dentro de la sección
+
+                        <head>. Éste es el método más recomendado para la mayoría de sitios web, especialmente si
+                            constan
+                            de múltiples páginas.
+                    </td>
+                    <ul>
+                        <td>
+                            <li>Permite reutilizar los estilos en varias páginas
+                                web, facilitando la consistencia y mantenibilidad.</li><br>
+
+                            <li>Facilita la separación entre el contenido (HTML) y
+                                el estilo (CSS).</li><br>
+
+                            <li> Optimiza el tiempo de carga del sitio web, ya
+                                que los navegadores pueden almacenar en
+                                caché los archivos CSS.</li>
+                        </td>
+                    </ul>
+                    <ul>
+                        <td>
+                            <li>Si el archivo CSS externo no se carga correctamente (por
+                                problemas de conexión o de enlace), la página se mostrará
+                                sin estilos.</li>
+                        </td>
+                    </ul>
+                </tr>
+            </tbody>
+        </table>
+    </article><br>
+
+    <article id="seccion3"> <!--SINTAXI BÁSICA DE CSS: Explicación y regls sobre la estructura y sintaxi de CSS-->
+        <h2><strong>SINTAXI BÁSICA DE CSS</strong></h2> <!-- Encabezado 2 -->
+        <ol>
+            <li><b>Regla CSS:</b> es una instrucción que define como
+                se debe aplicar un estilo a uno o más elementos HTML
+                dentro de una página web.</li><br>
+            <li><b>Selector:</b> Indica el elemento HTML al que
+                se aplicarán los estilos.</li><br>
+            <li><b>Propiedad:</b> Define la característica que quieres
+                modificar (como el color, el tamaño del texto, el
+                margen, etc.).</li><br>
+            <li><b>Valor:</b> Asigna un valor específico a la propiedad
+                (tales como "azul" para el color, "16px" para el tamaño
+                del texto, etc.).</li><br>
+            <li><b>Declaración CSS</b> es una instrucción dentro de una regla
+                CSS que define una característica específica de estilo
+                para un elemento HTML.</li>
+        </ol><br>
+
+        <h3><strong>Selectores en CSS</strong></h3> <!-- Encabezado 3 -->
+        <p>Los <b>selectores</b> son una parte fundamental del CSS porque definen qué elementos HTML serán afectados por
+            las reglas
+            de estilo. Existen varios tipos de selectores, pero los más comunes en el aprendizaje básico son:</p>
+        <ol>
+            <li><b>Selector de tipos (Type Selector)</b><br>Este selector aplica estilos a todos los elementos HTML del
+                mismo tipos. Este código aplicará el color verde a todos los títulos (&lt;h1&gt;) de la página.</li><br>
+
+            <li><b>Selector de clase (Class Selector)</b><br> Los selectores de clase permiten aplicar estilos a
+                elementos
+                HTML con una clase específica. Se utiliza un punto (.) para seleccionar una
+                clase. Cualquier elemento HTML que tenga el atributo class="mi-
+                clase" tendrá un fondo amarillo. Por ejemplo:</li><br>
+
+            <li><b>Selector de id (ID Selector)</b><br> El selector de id se utiliza para aplicar estilos a un único
+                elemento HTML que tenga un identificador específico. Se utiliza el símbolo de la almohada #. Este
+                ejemplo centrará el
+                texto del elemento que tenga id="mi-id". Es importante recordar que un ID debe ser único en la página.
+            </li><br>
+
+            <li><b>Selector universal</b><br> El selector universal (*) aplica estilos a todos los elementos de una
+                página. Este ejemplo elimina los márgenes y rellenos de todos los
+                elementos de la página, algo útil para establecer un estilo uniforme.</li>
+        </ol><br>
+
+        <h3><strong>Conceptos importantes</strong></h3>
+        <ul>
+            <li><b>Herencia:</b> Los hijos heredan los estilos de sus padres, así no es necesario
+                que escribas estilos para todo.</li><br>
+            <li><b>Especificidad</b> Cuando hay conflictos de estilos, el
+                navegador aplica sólo el de más especificidad.</li><br>
+            <li><b>Cascada</b> Tot estil sobreescriu un d'anterior.
+                La C de CSS significa Cascada.</li><br>
+        </ul>
+    </article><br>
+
+    <article id="seccion4"> <!--SINTAXI BÁSICA DE CSS: Explicación y regls sobre la estructura y sintaxi de CSS-->
+        <h2><strong>PROPIEDADES DE TEXTO Y FUENTES</strong></h2> <!-- Encabezado 2 -->
+
+
+
+
+    </article><br>
+
+</body>
+
+</html>
