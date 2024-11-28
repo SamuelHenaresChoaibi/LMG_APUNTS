@@ -63,9 +63,9 @@
             <li><a href="#seccion3">Sintaxi Básica de CSS</a></li><br>
             <li><a href="#seccion4">Propiedades de texto y fuentes</a></li><br>
             <li><a href="#seccion5">Margenes, rellenos y bordes</a></li><br>
-            <li><a href="#seccion6">Colores y fondos</a></li><br>
+            <li><a href="#seccion6">Colores y fondos en CSS</a></li><br>
             <li><a href="#seccion7">Dimensiones y cajas</a></li><br>
-            <li><a href="#seccion8">posicionamiento básico</a></li><br>
+            <li><a href="#seccion8">Posicionamiento básico</a></li><br>
             <li><a href="#seccion9">Diseño básico con Flexbox</a></li><br>
             <li><a href="#seccion10">Media Queries (Introducción)</a></li><br>
         </ol>
@@ -251,11 +251,571 @@
 
     <article id="seccion4"> <!--SINTAXI BÁSICA DE CSS: Explicación y regls sobre la estructura y sintaxi de CSS-->
         <h2><strong>PROPIEDADES DE TEXTO Y FUENTES</strong></h2> <!-- Encabezado 2 -->
+        <p>CSS permite controlar cómo se muestran los textos dentro de una página web. Con varias propiedades, podemos
+            cambiar la
+            fuente, el color, la alineación, el tamaño del texto, y otros aspectos visuales con el fin de mejorar la
+            legibilidad y la estética del
+            contenido.</p>
+        <ol>
+            <li>
+                <h3>Propiedad <i>font-family</i></h3>
+            </li>
+            <p>La propiedad font-family define el tipo de letra (tipografía) que se utilizará para
+                a un elemento de texto. Puedes especificar una o más fuentes, y el navegador aplicará la
+                primera que esté disponible en el sistema del usuario.</p>
+
+            <li>
+                <h3>Propiedad <i>font-size</i></h3>
+            </li>
+            <p>La propiedad font-size controla el tamaño de la letra. Los valores se pueden definir en
+                varias unidades, como píxeles (px), ems (me), puntos (pt), o porcentajes (%).</p>
+
+            <li>
+                <h3>Propiedad <i>color</i></h3>
+            </li>
+            <p>La propiedad color define el color del texto. Se pueden utilizar nombres de colores
+                predefinidos, valores en hexadecimal, o el sistema de colores RGB o RGBA.</p>
+
+            <li>
+                <h3>Propiedad <i>text-align</i></h3>
+            </li>
+
+            <p>La propiedad text-align se utiliza para controlar la alineación del texto dentro de un
+                elemento. Los valores más comunes son left (izquierda), right (derecha), center
+                (centrado) y justify (justificado).</p>
+
+            <li>
+                <h3>Propiedad <i>font-weight</i></h3>
+            </li>
+
+            <p>La propiedad fuente-weight controla el grosor de la letra. Los valores comunes son:
+            <ul>
+                <li>normal: por defecto.</li>
+                <li>bold: texto en negrita.</li>
+                <li>Números entre 100 y 900, donde 400 es el valor por defecto y 700 representa
+                    negrita</li>.
+            </ul>
+            </p>
 
 
 
+            <li>
+                <h3>Propiedad <i>font-style</i></h3>
+            </li>
+
+            <p>La propiedad font-style controla el estilo de la fuente, como si el texto será normal o en
+                cursiva.
+                Los valores más comunes son:
+            <ul>
+
+                <li>normal: Texto normal.</li>
+                <li>italic: Texto en cursiva.</li>
+                <li>oblique: Texto inclinado.</li>
+                </p>
+
+            </ul>
+
+        </ol>
 
     </article><br>
+
+    <article id="seccion5"> <!--SINTAXI BÁSICA DE CSS: Explicación y regls sobre la estructura y sintaxi de CSS-->
+        <h2><strong>MÁRGENES, RELLENOS Y BORDES EN CSS</strong></h2> <!-- Encabezado 2 -->
+        <p>Los <b>márgenes (margin)</b>, los <b>rellenos (padding)</b> y los <b>bordes (border)</b> son parte del modelo
+            de caja en CSS, que describe cómo
+            se disponen los elementos en la página. Estas propiedades permiten ajustar el espacio exterior e interior de
+            un elemento,
+            así como definir sus límites visuales con un borde.</p>
+
+        <ol>
+            <li>
+                <h3>Margenes (<i>margin</i>)</h3>
+            </li>
+            <p>La propiedad margin controla el espacio exterior de un elemento, es
+                es decir, el espacio que existe entre un elemento y los otros elementos
+                que le rodean. Los márgenes se pueden definir de forma
+                individual para cada uno de los cuatro lados del elemento
+                (superior, derecho, inferior, izquierdo) o de forma global para
+                todos los lados a la vez.</p>
+
+            <li>
+                <h3>Rellenos (<i>padding</i>)</h3>
+            </li>
+            <p>La propiedad padding controla el espacio interior de un elemento, es
+                es decir, el espacio entre el contenido de un elemento (como texto o
+                imágenes) y sus bordes. Al igual que con los márgenes, los rellenos
+                se pueden definir para todos los lados o para cada uno
+                individualmente.</p>
+
+            <li>
+                <h3>Bordes (<i>border</i>)</h3>
+            </li>
+            <p>La propiedad border se utiliza para añadir un borde alrededor
+                un elemento. Esta propiedad tiene varios subatributos:
+            <ul>
+                <li>ancho del borde (border-width): define el grosor de
+                    el borde.</li>
+                <li>estilo del borde (border-style): puede ser sólido (sólido),
+                    dashed (rayado), dotted (puntitos), etc.</li>
+                <li>color del borde (border-color): especifica el color de la
+                    borde.</li>.
+            </ul>
+
+
+            </p>
+
+            <li>
+                <h3>Unidades comunes: </i></h3>
+            </li>
+            <ul>
+                <li><b>Píxeles (px)</b>
+                    <ol type="a">
+                        <li>Unidad fija, representa un punto en la pantalla.</li>
+                        <li><b>Ejemplo:</b> margin: 20px;</li>
+                    </ol>
+                </li>
+
+                <li><b>Ems (em)</b>
+                    <ol type="a">
+                        <li>Unidad <b>relativa</b> al tamaño de la fuente del elemento padre.</li>
+                        <li><b>Ejemplo:</b> padding: 2em; (2 veces el tamaño de la fuente).</li>
+                    </ol>
+                </li>
+
+                <li><b>Rems (rem)</b>
+                    <ol type="a">
+                        <li>Unidad <b>relativa</b> al tamaño de la fuente del elemento raíz (html).</li>
+                        <li><b>Ejemplo:</b> margin: 1.5rem; (1.5 veces el tamaño de la fuente raíz).</li>
+                    </ol>
+                </li>
+
+                <li><b>Porcentajes (%)</b>
+                    <ol type="a">
+                        <li><b>Relativa</b> a la anchura o altura del contenedor padre.</li>
+                        <li><b>Ejemplo:</b> padding: 5%; (5% de la anchura del contenedor).</li>
+                    </ol>
+                </li>
+
+                <li><b>Viewports (vw, vh)</b>
+                    <ol type="a">
+                        <li><b>Relativa</b> al tamaño de la ventana visible.</li>
+                        <li><b>Ejemplo:</b> margin: 5vw; (5% de la anchura del viewport).</li>
+                    </ol>
+                </li>
+
+
+                <li><b>Bordes (<i>border-width</i>)</b>
+                    <ol type="a">
+                        <li>Grosores predeterminados: thin, medium, thick o valores como px.</li>
+                        <li><b>Ejemplo:</b> border: thick solid black;</li>
+                    </ol>
+                </li>
+
+            </ul>
+
+
+        </ol>
+
+    </article>
+
+    <article id="seccion6"> <!--SINTAXI BÁSICA DE CSS: Explicación y regls sobre la estructura y sintaxi de CSS-->
+        <h2><strong>COLORES Y FONDOS EN CSS</strong></h2> <!-- Encabezado 2 -->
+
+        <p>CSS proporciona varias propiedades para aplicar colores y fondos a los elementos HTML. Estas propiedades son
+            esenciales
+            para mejorar el aspecto visual y la legibilidad de la página web.</p>
+
+        <ol>
+            <li>
+                <h3><b>Propiedad <i>color</i></b></h3>
+            </li>
+            <p>La propiedad <i>color</i> se utiliza para cambiar el color del texto dentro de un
+                elemento. Puedes definir los colores de varias formas:</p>
+            <ul>
+                <li><b>Nombres de colores:</b> utilizar nombres predefinidos como red, blue,
+                    green, etc.</li>
+                <li><b>Colores hexadecimales:</b> utilizar un código hexadecimal que
+                    comienza con # seguido de seis caracteres (ejemplo: #FF0000
+                    para rojo).</li>
+                <li><b>RGB:</b> utilizar valores de rgb() donde cada componente (rojo,
+                    verde, azul) se especifica entre 0 y 255.</li>
+                <li><b>RGBA:</b> al igual que rgb(), pero con un cuarto valor para la opacidad
+                    (valores entre 0.0 y 1.0).</li>
+            </ul>
+
+            <li>
+                <h3><b>Propiedad <i>background-color</i></b></h3>
+            </li>
+            <p>La propiedad background-color se utiliza para establecer el color de fondo
+                de un elemento. Al igual que la propiedad color, puedes definir colores
+                utilizando nombres, valores hexadecimales, RGB o RGBA.</p>
+
+            <li>
+                <h3><b>Propiedad <i>background</i></b></h3>
+            </li>
+            <p>La propiedad background es una forma abreviada de especificar
+                diversas propiedades de fondo a la vez, como el color, la imagen de
+                fondo, la repetición, la posición, etc.</p>
+
+            <li>
+                <h3><b>Propiedad <i>backgorund-image</i></b></h3>
+            </li>
+            <p>Esta propiedad permite añadir una imagen como fondo de un
+                elemento. Puedes especificar la ubicación de la imagen con una URL.
+
+                Si quieres que la imagen se repita o se muestre de otra forma,
+                puedes utilizar otras propiedades complementarias:</p>
+            <ul>
+                <li><b><i>background-repeat:</i></b> Controla si la imagen de fondo se repite.
+                    Los valores pueden ser repeat, no-repeat, repeat-x
+                    (horizontalmente) o repeat-y (verticalmente).</li>
+                <li><b><i>background-position:</i></b> Define la posición de la imagen de fondo
+                    (por ejemplo, center, top, left).</li>
+                <li><b><i>background-size:</i></b> Permite ajustar el tamaño de la imagen (por
+                    ejemplo, cover o contain para adaptarse al tamaño de
+                    el elemento).</li>
+            </ul>
+        </ol>
+
+        <h3><b>Resumen de las propiedades vistas:</b></h3>
+        <ol>
+            <li><b><i>color:</i></b> Define el color del texto.</li>
+            <li><b><i>background-color:</i></b> Establece el color de fondo de un
+                elemento.</li>
+            <li><b><i>background-image:</i></b> Añade una imagen de fondo a uno
+                elemento.</li>
+            <li><b><i>background-repeat:</i></b> Controla la repetición de la imagen de
+                fondo.</li>
+            <li><b><i>background-position:</i></b> Define la posición de la imagen de
+                fondo.</li>
+            <li><b><i>background-size:</i></b> Ajusta el tamaño de la imagen de fondo.</li>
+            <li><b><i>background:</i></b> Propiedad abreviada que combina varias
+                propiedades de fondo.</li>
+        </ol>
+
+    </article>
+
+    <article id="seccion7">
+        <h2><strong>DIMENSIONES Y CAJAS EN CSS</strong></h2> <!-- Encabezado 2 -->
+        <p>CSS utiliza el modelo de caja para representar los elementos de una página web. Cada elemento se considera
+            como una caja rectangular que contiene el contenido, rellenos, márgenes y bordes. Es importante entender
+            este modelo
+            porqué controla cómo se distribuyen y ajustan los elementos dentro de la página.</p>
+        <p>El modelo de caja se compone de cuatro partes principales:</p>
+        <ol>
+
+            <li> <b>Contenido:</b> El contenido real del elemento, como texto, imágenes u otros elementos.</li>
+            <li> <b>Relleno (padding):</b> El espacio entre el contenido y el borde.</li>
+            <li> <b>Borde (border):</b> El límite alrededor del relleno.</li>
+            <li> <b>Margen (margin):</b> El espacio externo entre el borde y otros elementos.</li>
+
+        </ol>
+
+        <ul>
+            <li>
+                <h3><b>Propiedades de dimensiones (width y height)</b></h3>
+            </li>
+            <p>Las propiedades width (anchura) y height (altura) se utilizan para definir el tamaño de un elemento.
+                Estos valores se
+                pueden definirse en unidades fijas como píxeles (px) o unidades relativas como porcentajes (%), que
+                dependen del tamaño del
+                su elemento contenedor.</p>
+
+            <li>
+                <h3><b>El modelo de caja en CSS</b></h3>
+            </li>
+            <p>El <b>modelo de caja</b> establece cómo se calculan las dimensiones de un elemento teniendo en cuenta las
+                propiedades de márgenes, rellenos, y bordes. Por
+                defecto, el tamaño de width y height sólo afecta al contenido. Para incluir el relleno y el borde dentro
+                de las dimensiones del elemento, se puede utilizar
+                la propiedad box-sizing.</p>
+            <h4><b>Propiedad box-sizing</b></h4>
+            <p>La propiedad box-sizing controla cómo se calculan las dimensiones totales del elemento. Hay dos opciones
+                principales:</p>
+            <ol>
+                <li><b><i>content-box</i> (valor por defecto):</b> Sólo incluye el contenido en las dimensiones,
+                    mientras que
+                    los bordes y los rellenos se añaden aparte.</li>
+                <li><b>border-box:</b> Incluye el contenido, el relleno y el borde dentro de las dimensiones
+                    especificadas.</li>
+            </ol>
+
+            <li>
+                <h3><b>Control del desbordamiento(overflow)</b></h3>
+            </li>
+            <p>Cuando el contenido de un elemento es mayor que las dimensiones especificadas, el CSS ofrece la propiedad
+                overflow para controlar cómo se
+                muestra el contenido que rebosa.</p>
+            <h4><b>Los valores más comunes son: </b></h4>
+            <ol>
+                <li><b><i>visible: </i></b>El contenido que rebosa se muestra fuera del elemento (valor predeterminado).
+                </li>
+                <li><b><i>hidden: </i></b>El contenido que rebosa es recortado y no se muestra.</li>
+                <li><b><i>scroll: </i></b>Muestra barras de desplazamiento, aunque el contenido no desborde.</li>
+                <li><b><i>auto: </i></b>Muestra barras de desplazamiento sólo si el contenido rebosa.</li>
+            </ol>
+
+            <h3><b>Resumen de las propiedades vistas:</b></h3>
+            <ol>
+                <li><b><i>width y height: </i></b>Definen las dimensiones de un
+                    elemento.</li>
+                <li><b><i>box-sizing: </i></b>Controla cómo se calculan las
+                    dimensiones totales de un elemento teniendo en cuenta
+                    el relleno y el dobladillo.</li>
+                <li><b><i>overflow: </i></b>Controla cómo se maneja el contenido
+                    que desborda las dimensiones del elemento.</li>
+        </ul>
+    </article>
+
+    <article id="seccion8">
+        <h2><strong>POSICIONAMIENTO BÁSICO EN CSS</strong></h2> <!-- Encabezado 2 -->
+        <p>CSS ofrece diversas técnicas para controlar la ubicación de los elementos en una página web. La propiedad
+            clave para el posicionamiento es
+            position, que tiene varios valores para definir cómo se posiciona un elemento respecto a su elemento
+            contenedor o al documento.</p>
+
+        <ol>
+            <li>
+                <h3><b>La propiedad <i>position</i></b></h3>
+            </li>
+            <p>La propietat position permet especificar el mètode de posicionament d’un element. Els valors més
+                comuns són:</p>
+            <ul>
+                <li><b><i>static (por defecto): </i></b>Los elementos se posicionan de forma normal, siguiendo el flujo
+                    del documento. No se puede ajustar manualmente con
+                    coordenadas.</li>
+                <li><b><i>relative: </i></b>Se posiciona el elemento respecto a su posición original en el flujo del
+                    documento. Se pueden utilizar coordenadas para moverlo
+                    ligeramente (arriba, abajo, izquierda o derecha).</li>
+                <li><b><i>absolute: </i></b>El elemento se quita del flujo del documento y se posiciona respecto a su
+                    elemento contenedor más cercano que tenga una posición
+                    definida. Si no existe ningún contenedor definido, se posiciona respecto a la página.</li>
+                <li><b><i>fixed: </i></b>El elemento se quita del flujo del documento y se posiciona respecto a la
+                    ventana del navegador. Se mantiene fijo incluso cuando el usuario hace
+                    desplazamientos.</li>
+                <li><b><i>sticky: </i></b>El elemento se comporta como relative hasta que llega a un punto en el
+                    desplazamiento de la página, después del cual se comporta
+                    como fixed.</li>
+            </ul>
+
+            <li>
+                <h3><b>Propiedades posicionamiento (top, right, bottom, left)</b></h3>
+            </li>
+            <p>Cuando se define la propiedad position como relative, absolute, fixed o sticky, puedes utilizar las
+                propiedades top, right, bottom, y left por
+                especificar la distancia del elemento respecto a sus límites.</p>
+            <p><b>Ejemplos:</b></p>
+            <ul>
+                <li><b>top: 10px;</b>: Mover el elemento 10 píxeles hacia abajo desde el límite superior.</li>
+                <li><b>right: 20px;</b>: Mover el elemento 20 píxeles hacia la izquierda desde el límite derecho.</li>
+            </ul>
+
+            <li>
+                <h3><b>Posicionamiento absolut (position: absolute)</b></h3>
+            </li>
+            <p>Con position: absolute, elemento se quita completamente del flujo
+                normal del documento y se posiciona respecto a su elemento
+                contenedor más cercano con position: relative, absolute, o fixed.</p>
+
+            <li>
+                <h3><b>Posicionamiento fix (position: fixed)</b></h3>
+            </li>
+            <p>Los elementos con position: fixed se mantienen en una ubicación fija
+                en la pantalla incluso cuando el usuario realiza desplazamientos. Se
+                posicionan respecto a la ventana del navegador.</p>
+
+            <li>
+                <h3><b>Posicionamiento enganchoso (position: sticky)</b></h3>
+            </li>
+            <p>Los elementos con position: sticky se comportan como relative hasta
+                que el usuario se desplaza por la página y llega a un punto
+                especificado, después del cual el elemento se comporta como fixed.</p>
+
+        </ol>
+        <h3><b>Resumen de las propiedades vistas</b></h3>
+        <ol>
+            <li><b>position: static:</b> Posicionamiento por defecto.</li>
+            <li><b>position: relative:</b> El elemento se mueve
+                respecto a su posición original.</li>
+            <li><b>position: absolute:</b> El elemento se posiciona
+                respecto a su contenedor más cercano.</li>
+            <li><b>position: fixed:</b> Elemento se fija respecto a
+                la ventana del navegador.</li>
+            <li><b>position: sticky:</b> El elemento se comporta
+                como relative hasta que llega a una posición
+                fijada, donde se mantiene pegajoso.</li>
+            <li><b>z-index:</b> Controla el orden de superposición
+                de los elementos.</li>
+        </ol>
+
+
+    </article>
+
+
+    <article id="seccion9">
+        <h2><strong>DISEÑO BÁSICO CON FLEXBOX</strong></h2> <!-- Encabezado 2 -->
+        <p><b>Flexbox</b> es un sistema de diseño en CSS que proporciona una forma muy eficiente de distribuir el
+            espacio entre los
+            elementos y alinearlos dentro de un contenedor, incluso cuando el tamaño de los elementos es desconocido o
+            dinámico. Flexbox
+            es ideal para crear diseños de páginas adaptativas, ya que facilita la alineación, distribución y ordenación
+            de los elementos
+            dentro de un contenedor.</p>
+
+        <ol>
+            <li>
+                <h3><b>El contenedor flex (display: flex)</b></h3>
+            </li>
+            <p>El punto de partida para utilizar Flexbox es establecer display: flex en
+                el elemento contenedor. Este contenedor se conoce como <b>contenedor
+                    flex</b>, y sus elementos hijos se conocen como <b>elementos flex</b>. Una vez
+                activado el display: flex, puedes utilizar varias propiedades para ajustar como
+                se distribuyen los elementos dentro del contenedor.</p>
+
+
+            <li>
+                <h3><b>Dirección del flujo (flex-direction)</b></h3>
+            </li>
+            <p>Por defecto, los elementos flex se disponen en fila horizontalmente. Puedes
+                cambiar la dirección con la propiedad flex-direction.</p>
+            <p><b>Los valores más comunes son:</b></p>
+            <ul>
+                <li><b>row:</b> Los elementos se colocan en fila (horizontal) (valor por
+                    defecto).</li>
+                <li><b>row-reverse:</b> Los elementos se colocan en fila pero en orden
+                    inverso.</li>
+                <li><b>column:</b> Los elementos se colocan en columna (vertical).</li>
+                <li><b>column-reverse:</b> Los elementos se colocan en columna pero en
+                    orden inverso.</li>
+            </ul>
+
+
+            <li>
+                <h3><b>Alineación horizontal (justify-content)</b></h3>
+            </li>
+            <p>La propietat justify-content controla l'alineació dels elements al llarg de
+                l'eix principal (horitzontal per defecte). Pots distribuir els elements flex de
+                diferents maneres dins del contenidor.</p>
+            <p><b>Los valores más comunes son:</b></p>
+            <ul>
+                <li><b>flex-start:</b> Los elementos se alinean al principio del contenedor.</li>
+                <li><b>flex-end:</b> Los elementos se alinean al final del contenedor.</li>
+                <li><b>center:</b> Los elementos se centran dentro del contenedor.</li>
+                <li><b>space-between:</b> Se distribuyen uniformemente con espacio entre ellos.</li>
+                <li><b>space-around:</b> Los elementos tienen espacio alrededor de cada uno.</li>
+            </ul>
+
+
+            <li>
+                <h3><b>Alineación vertical (align-items)</b></h3>
+            </li>
+            <p>La propiedad align-items controla la alineación de los elementos a lo largo del eje
+                transversal (vertical si la dirección es horizontal). Esta propiedad
+                determina cómo se alinean los elementos flex dentro del contenedor en relación
+                con su altura.</p>
+            <p><b>Los valores más comunes son:</b></p>
+            <ul>
+                <li><b>stretch:</b> Los elementos se estiran para llenar el contenedor (valor para
+                    defecto).</li>
+                <li><b>flex-start:</b> Los elementos se alinean en la parte superior del contenedor.</li>
+                <li><b>flex-end:</b> Los elementos se alinean en la parte inferior del contenedor.</li>
+                <li><b>center:</b> Los elementos se centran verticalmente dentro del contenedor.</li>
+                <li><b>baseline:</b> Los elementos se alinean según su línea de base de texto.</li>
+            </ul>
+
+            <li>
+                <h3><b>Control del espacio que ocupa cada elemento (flex-grow)</b></h3>
+            </li>
+            <p>La propiedad flex-grow especifica cómo los elementos flex crecen dentro del contenedor para ocupar el
+                espacio disponible.
+                un valor numérico que indica cuánto debe crecer en relación con los demás elementos. Si todos los
+                elementos tienen flex-grow: 1, el espacio disponible
+                se distribuirá de forma uniforme.</p>
+
+        </ol>
+
+        <h3><b>Resumen de las propiedades vistas</b></h3>
+        <ol>
+            <li><b>display:flex:</b> Activa el Flexbox en el
+                contenedor.</li>
+            <li><b>flex-direction:</b> Define si los elementos se
+                colocan en fila o en columna.</li>
+            <li><b>justify-content:</b> Alinea los elementos
+                horizontalmente (eje principal).</li>
+            <li><b>align-items:</b> Alinea los elementos
+                verticalmente (eje transversal).</li>
+            <li><b>flex-grow:</b> Controla cómo crece cada elemento
+                dentro del contenedor para ocupar espacio.</li>
+
+        </ol>
+    </article>
+
+    <article id="seccion9">
+        <h2><strong>DISEÑO BÁSICO CON FLEXBOX</strong></h2> <!-- Encabezado 2 -->
+        <p> Las<b> Media Queries </b>son una característica poderosa del CSS que permite adaptar el diseño de una página
+            web en
+            función de las características del dispositivo que lo está visualizando, como el tamaño de la pantalla, la
+            resolución o
+            la orientación. Esta técnica es clave para implementar diseños responsivos que ofrecen una experiencia
+            óptima tanto
+            en dispositivos móviles como en tabletas u ordenadores de sobremesa.</p>
+
+        <ol>
+            <li>
+                <h3><b>¿Qué son las Media Queries?</b></h3>
+            </li>
+            <p>Una <b>media query</b> es una condición que se añade al CSS
+                para aplicar reglas de estilo sólo cuando se cumplan
+                ciertas características del dispositivo o de la ventana
+                del navegador. El ejemplo más común es aplicar estilos
+                diferentes en función del ancho de la pantalla.</p>
+
+
+            <li>
+                <h3><b>Aplicación básica de Media Queries para pantallas de diferente
+                        tamaño</b></h3>
+            </li>
+            <p>Un uso típico de las media queries es adaptar el diseño a diferentes
+                anchuras de pantalla. Por ejemplo, puedes ajustar los estilos para
+                pantallas grandes y pequeñas.</p>
+
+            <li>
+                <h3><b>Tipo de condiciones más comunes en las Media Queries</b></h3>
+            </li>
+            <p>A continuación, veremos algunas de las condiciones más comunes que puedes utilizar dentro de las media
+                queries:</p>
+            <ul>
+                <li><b>Ancho de la pantalla (min-width y max-width)</b></li>
+                <p>Estas condiciones se utilizan para aplicar estilos cuando la ventana del
+                    navegador tiene una anchura mínima (min-width) o máxima (max-width).</p>
+
+
+                <li><b>Altura de la pantalla (min-height y max-height)</b></li>
+                <p>Estas condiciones funcionan de forma similar a las de ancho,
+                    pero se basan en la altura de la ventana.</p>
+
+                <li><b>Orientación de la pantalla (orientation)</b></li>
+                <p>Puedes utilizar la condición orientation para aplicar estilos diferentes si la
+                    pantalla está en orientación horizontal (landscape) o vertical (portrait).</p>
+            </ul>
+            <li>Ús de múltiples condicions en una Media Query</li>
+            <p>Puedes combinar varias condiciones en una sola media query mediante las palabras clave and u only para especificar
+                estilos muy concretos.</p>
+        </ol>
+        <h3><b>Resumen de las propiedades vistas:</b></h3>
+        <ul>
+            <li><b>@media:</b> Define una media query.</li>
+            <li><b>min-width y max-width:</b> Aplica estilos según
+                la anchura mínima o máxima de la pantalla.</li>
+            <li><b>min-height y max-height:</b> Aplica estilos según
+                la altura mínima o máxima de la pantalla.</li>
+            <li><b>orientation:</b> Aplica estilos según la orientación del
+                dispositivo (vertical u horizontal).</li>
+            <li><b>and:</b> Combina múltiples condiciones en una media
+                query.</li>
+
+        </ul>
+    </article>
 
 </body>
 
