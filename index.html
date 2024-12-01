@@ -1,72 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
-<!-- Define el idioma del contenido del documento -->
-
+<html lang="es">
 <head>
     <meta charset="UTF-8"> <!-- Establece la codificación de caracteres a UTF-8 -->
     <meta name="author" content="Samuel Henares Choaibi"> <!-- Define el autor del documento -->
     <meta name="description" content="Apuntes DAM">
-    <!-- Proporciona una descripción del contenido del documento para SEO -->
     <meta property="og:url" content="Apuntes DAM-Samuel Henares Choaibi">
-    <!-- Define la URL del documento para Open Graph (redes sociales) -->
     <meta name="robots" content="index, follow">
-    <!-- Indica a los motores de búsqueda que indexen la página, debería ser 'index, follow' -->
     <meta name="keywords" content="HTML 5, DAM Proyecto, LGM Proyecto, CSS, JavaScript">
-    <!-- Palabras clave para SEO -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Configura la ventana gráfica para un diseño responsive -->
-
     <link rel="icon" href="Imagenes/pau.png"> <!-- Define el logo -->
+    <link rel="stylesheet" href="style.css"> <!-- Vincula el archivo CSS -->
     <title>Samuel Henares Choaibi</title>
-    <!-- Define el título del documento que aparece en la pestaña del navegador -->
 </head>
 
 <body>
-    <center>
-        <h1><span style="color: black"><b>APUNTES CFGS DAM</b></span></h1>
-    </center>
-    <hr>
-    <!-- Título principal de la página-->
-    <center>
-        <strong>
-            <h2>LENGUAJE DE MARCAS Y SISTEMAS DE GESTIÓN DE LA INFORMACIÓN</h2>
-        </strong><br><br>
+    <header class="title-bar">
+            <p><a href="https://paucasesnovescifp.cat/" target="_self"><b><img src="Imagenes/pau.png" alt="Logo Pau Casesnoves"></b></a></p>
+            <h1>APUNTES CFGS DAM</h1>
+    </header>
 
-        <p><a href="htmlBasico.html" target="_self"><b><img src="Imagenes/html.png" alt="HTML Básico" width="25%"
-                        height="25%"></b></a></p>
-        <p><a href="htmlBasico.html" target="_self"><span style="color: black"><b>HTML Básico</b></span></a></p>
-        <br><br><br>
-        <!-- Enlace para apartado 1.HTML Básico, se debe agregar la URL -->
+<!-- Título principal de la página -->
+    <strong>
+        <h2>LENGUAJE DE MARCAS Y SISTEMAS DE GESTIÓN DE LA INFORMACIÓN</h2>
+    </strong>
 
-        <p><a href="htmlAvan.html" target="_self"><b><img src="Imagenes/html5.png" alt="HTML Avanzado" width="25%"
-                        height="25%"></b></a></p>
-        <p><a href="htmlAvan.html" target="_self"><span style="color: black"><b>HTML Avanzado</b></span></a></p>
-        <br><br><br>
-        <!-- Enlace para apartado 2.HTML Avanzado, se debe agregar la URL -->
+    <main>
+        <div class="box-apartados-container">
+            <!-- Apartado 1: HTML Básico -->
+            <div class="container-apartado">
+                <p><a href="htmlBasico.html" target="_self"><b><img src="Imagenes/html.png" alt="HTML Básico" width="100%"></b></a></p>
+                <p><a href="htmlBasico.html" target="_self"><span style="color: black"><b>HTML Básico</b></span></a></p>
+            </div>
 
-        <p><a href="buenasPracticas.html" target="_self"><b><img src="Imagenes/ex.png" alt="Buenas Prácticas con HTML"
-                        width="25%" height="25%"></b></a></p>
-        <p><a href="buenasPracticas.html" target="_self"><span style="color: black"><b>Buenas Prácticas con
-                        HTML</b></span></a></p> <br><br><br>
+            <!-- Apartado 2: HTML Avanzado -->
+            <div class="container-apartado">
+                <p><a href="htmlAvan.html" target="_self"><b><img src="Imagenes/html5.png" alt="HTML Avanzado" width="100%"></b></a></p>
+                <p><a href="htmlAvan.html" target="_self"><span style="color: black"><b>HTML Avanzado</b></span></a></p>
+            </div>
 
-        <!-- Enlace para apartado 3. Buenas Prácticas HTML, se debe agregar la URL -->
+            <!-- Apartado 3: Buenas Prácticas con HTML -->
+            <div class="container-apartado">
+                <p><a href="buenasPracticas.html" target="_self"><b><img src="Imagenes/ex.png" alt="Buenas Prácticas con HTML" width="100%"></b></a></p>
+                <p><a href="buenasPracticas.html" target="_self"><span style="color: black"><b>Buenas Prácticas con HTML</b></span></a></p>
+            </div>
 
-        <p><a href="conceptosDos.html" target="_self"><b><img src="Imagenes/bomb.png" alt="Nuevos Conceptos HTML"
-                        width="25%" height="25%"></b></a></p>
-        <p><a href="conceptosDos.html" target="_self"><span style="color: black"><b>Nuevos Conceptos en
-                        HTML</b></span></a></p><br><br><br>
-        <!-- Enlace para apartado 4. Nuevo Conceptos en HTML, se debe agregar la URL -->
+            <!-- Apartado 4: Nuevos Conceptos en HTML -->
+            <div class="container-apartado">
+                <p><a href="conceptosDos.html" target="_self"><b><img src="Imagenes/bomb.png" alt="Nuevos Conceptos HTML" width="100%"></b></a></p>
+                <p><a href="conceptosDos.html" target="_self"><span style="color: black"><b>Nuevos Conceptos en HTML</b></span></a></p>
+            </div>
 
-        <p><a href="cssBasico.html" target="_self"><b><img src="Imagenes/csslogo.png" alt="HTML Avanzado" width="20%"
-                        height="20%"></b></a></p>
-        <p><a href="cssBasico.html" target="_self"><span style="color: black"><b>CSS Básico</b></span></a></p>
-        <!-- Enlace para apartado 5. CSS Básico, se debe agregar la URL -->
-    </center>
-
-
-
+            <!-- Apartado 5: CSS Básico -->
+            <div class="container-apartado">
+                <p><a href="cssBasico.html" target="_self"><b><img src="Imagenes/csslogo.png" alt="CSS Básico" width="100%"></b></a></p>
+                <p><a href="cssBasico.html" target="_self"><span style="color: black"><b>CSS Básico</b></span></a></p>
+            </div>
+        </div>
+    </main>
 </body>
-<!-- Fin del cuerpo -->
-
 </html>
-<!-- Fin del código -->
