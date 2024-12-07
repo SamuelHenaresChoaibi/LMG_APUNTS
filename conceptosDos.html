@@ -12,128 +12,182 @@
     <!-- Configura la ventana gráfica para un diseño responsive -->
 
     <link rel="icon" href="Imagenes/bomb.png"> <!-- Define el logo -->
+    <link rel="stylesheet" href="style.css">
     <title>NUEVOS CONCEPTOS EN HTML</title>
     <!-- Define el título del documento que aparece en la pestaña del navegador -->
 </head>
 <!-- Fin del encabezado-->
 
 <body> <!-- Cuerpo -->
-    <p><a href="index.html" target="_self"><span style="color: black"><b><img src="Imagenes/flecha.png"
-                        alt="Volver al menú principal" width="50" height="50"></b></span></a>
-    </p>
-    <center> <!-- Por ahora se utilizará <center> para estilizar un poco el texto mientras solo se usa HTML-->
-        <h1><span style="color: black"><b>4. NUEVOS CONCEPTOS EN HTML</b></span></h1>
-        <img src="Imagenes/bomb.png" alt="Nuevos Conceptos" width="300" height="300">
-    </center>
-    <hr>
+    <header>
+        <div class="notes-header">
+            <nav>
+                <a href="index.html" target="_self">⬅</a>
+            </nav>
 
-    <h1><b>OTROS APARTADOS</b></h1>
-    <ol>
-        <li><a href="htmlBasico.html" target="_self"><span style="color: black"><b>HTML Básico</b></span></a></li>
-        <br><br>
-        <!-- Enlace para apartado 1.HTML Básico, se debe agregar la URL -->
+            <div class="box-header">
+                <img src="Imagenes/bomb.png" alt="Nuevos conceptos HTML 5" width="300" height="300">
+                <h1 style="font-size: 30px;">4. NUEVOS CONCEPTOS</h1>
+            </div>
+        </div>
+    </header>
+    <div class="margin-body">
+        <h1 class="otros-apartados"><b>OTROS APARTADOS</b></h1>
+        <div class="box-apartados-container">
 
-        <li><a href="htmlAvan.html" target="_self"><span style="color: black"><b>HTML Avanzado</b></span></a></li>
-        <br><br>
-        <!-- Enlace para apartado 2.HTML Avanzado, se debe agregar la URL -->
+            <!-- Apartado 1: HTML Básico -->
+            <div class="container-apartado">
+                <p><a href="htmlBasico.html" target="_self"><b><img src="Imagenes/html.png" alt="HTML Avanzado"
+                                width="100%"></b></a></p>
+                <p><a href="htmlBasico.html" target="_self"><b>HTML Básico</b></a>
+                </p>
+            </div>
 
-        <li><a href="buenasPracticas.html" target="_self"><span style="color: black"><b>Buenas Prácticas con
-                        HTML</b></span></a></li><br>
-        <!-- Enlace para apartado 3. Buenas Prácticas HTML, se debe agregar la URL -->
-    </ol>
-    <ol start="5">
-        <li><a href="cssBasico.html" target="_self"><span style="color: black"><b>CSS Básico</b></span></a></li>
-        <!-- Enlace para apartado 5.CSS Básico, se debe agregar la URL -->
-    </ol>
-    <br>
+            <!-- Apartado 2: HTML Avanzado -->
+            <div class="container-apartado">
+                <p><a href="htmlAvan.html" target="_self"><b><img src="Imagenes/html5.png" alt="Nuevos Conceptos HTML"
+                                width="100%"></b></a></p>
+                <p><a href="htmlAvan.html" target="_self"><b>HTML Avanzado</b></a></p>
+            </div>
 
-    <article>
-        <h1><b>ÍNDICE</b></h1>
-        <!-- Índice dividido en secciones con enlace directo a cada apartado del tema de HTML Avanzado -->
+            <!-- Apartado 3: Buenas Prácticas con HTML -->
+            <div class="container-apartado">
+                <p><a href="buenasPracticas.html" target="_self"><b><img src="Imagenes/ex.png"
+                                alt="Buenas Prácticas con HTML" width="100%"></b></a></p>
+                <p><a href="buenasPracticas.html" target="_self"><b>Buenas Prácticas con
+                            HTML</b></a></p>
+            </div>
 
-        <ol type="1">
-            <li><a href="#seccion1">Introducción a Nuevos Conceptos en HTML</a></li><br>
-            <li><a href="#seccion2">Etiqueta &lt;dialog&gt;</a></li><br>
-            <li><a href="#seccion3">Etiqueta &lt;details&gt; y &lt;summary&gt;</a></li><br>
-            <li><a href="#seccion4">Conclusión</a></li><br>
-        </ol>
-    </article><br>
+            <!-- Apartado 5: CSS Básico -->
+            <div class="container-apartado">
+                <p><a href="cssBasico.html" target="_self"><b><img src="Imagenes/csslogo.png" alt="CSS Básico"
+                                width="100%"></b></a></p>
+                <p><a href="cssBasico.html" target="_self"><b>CSS Básico</b></a>
+                </p>
+            </div>
+        </div>
+
+
+        <div class="indice">
+
+            <h1><b>ÍNDICE</b></h1>
+            <!-- Índice dividido en secciones con enlace directo a cada apartado del tema de HTML Avanzado -->
+
+            <ol type="1">
+                <li><a href="#seccion1">Introducción a Nuevos Conceptos en HTML</a></li><br>
+                <li><a href="#seccion2">Etiqueta &lt;dialog&gt;</a></li><br>
+                <li><a href="#seccion3">Etiqueta &lt;details&gt; y &lt;summary&gt;</a></li><br>
+                <li><a href="#seccion4">Conclusión</a></li><br>
+            </ol>
+        </div>
+
+    </div>
 
     <!-- Cada sección está dividida con articles para tratar temas distintos es cada apartado, los cuales se les asignan un ID para el índice -->
+    <div class="grid-sections">
+        <div class="container-seccion" id="seccion1">
+            <!-- INTRODUCCIÓN A NUEVOS CONCEPTOS EN HTML: Breve introducción sobre dos nuevos conceptos en HTML-->
+            <h2><strong>INTRODUCCIÓN A NUEVOS CONCEPTOS EN HTML</strong></h2>
+            <p>Después de haber explorado y documentado los conceptos básicos y avanzados de HTML en los apuntes
+                anteriores,
+                he decidido ampliar el contenido con dos conceptos adicionales que no se habían cubierto previamente.
+                Estos
+                conceptos son importantes para el desarrollo web moderno y ofrecen funcionalidades nativas que mejoran
+                la
+                experiencia del usuario y la accesibilidad de las páginas web. Los dos nuevos conceptos que se
+                presentarán a
+                continuación son:</p>
+            <ol>
+                <li><strong>Etiqueta &lt;dialog&gt;</strong></li>
+                <li><strong>Etiqueta &lt;details&gt; y &lt;summary&gt;</strong></li>
+            </ol>
+        </div>
 
-    <article id="seccion1">
-        <!-- INTRODUCCIÓN A NUEVOS CONCEPTOS EN HTML: Breve introducción sobre dos nuevos conceptos en HTML-->
-        <h2><strong>INTRODUCCIÓN A NUEVOS CONCEPTOS EN HTML</strong></h2>
-        <p>Después de haber explorado y documentado los conceptos básicos y avanzados de HTML en los apuntes anteriores,
-            he decidido ampliar el contenido con dos conceptos adicionales que no se habían cubierto previamente. Estos
-            conceptos son importantes para el desarrollo web moderno y ofrecen funcionalidades nativas que mejoran la
-            experiencia del usuario y la accesibilidad de las páginas web. Los dos nuevos conceptos que se presentarán a
-            continuación son:</p>
-        <ol>
-            <li><strong>Etiqueta &lt;dialog&gt;</strong></li>
-            <li><strong>Etiqueta &lt;details&gt; y &lt;summary&gt;</strong></li>
-        </ol>
-    </article><br>
+        <div class="container-seccion" id="seccion2">
+            <!-- ETIQUETA <dialog>: Para que sirve, ejemplo y porque se ha escogido-->
+            <h2><strong>ETIQUETA &lt;dialog&gt;</strong></h2>
+            <ul>
+                <li>La etiqueta <b>&lt;dialog&gt;</b> se utiliza para <b>crear cuadros de diálogo modales y no
+                        modales</b>
+                    en una
+                    página web. Estos cuadros de diálogo pueden contener cualquier tipo de contenido HTML y se pueden
+                    mostrar y ocultar
+                    mediante JavaScript. La principal ventaja de usar <b>&lt;dialog&gt;</b> es que simplifica la
+                    creación de
+                    diálogos sin necesidad de bibliotecas externas, mejorando la accesibilidad y la experiencia del
+                    usuario.
+                </li><br><br>
+                <img src="ApuntesHTML/dialog.png" alt="Etiqueta dialog" width="375" height="350"><br><br>
 
-    <article id="seccion2">
-        <!-- ETIQUETA <dialog>: Para que sirve, ejemplo y porque se ha escogido-->
-        <h2><strong>ETIQUETA &lt;dialog&gt;</strong></h2>
-        <ul>
-            <li>La etiqueta <b>&lt;dialog&gt;</b> se utiliza para <b>crear cuadros de diálogo modales y no modales</b>
-                en una
-                página web. Estos cuadros de diálogo pueden contener cualquier tipo de contenido HTML y se pueden
-                mostrar y ocultar
-                mediante JavaScript. La principal ventaja de usar <b>&lt;dialog&gt;</b> es que simplifica la creación de
-                diálogos sin necesidad de bibliotecas externas, mejorando la accesibilidad y la experiencia del usuario.
-            </li><br><br>
-            <center><img src="Apuntes/dialog.png" alt="Etiqueta dialog" width="375" height="350"></center><br><br>
+                <li><b>Razón para elegirlo:</b> La etiqueta <b>&lt;dialog&gt;</b> simplifica la creación de cuadros de
+                    diálogo sin necesidad de bibliotecas externas como jQuery UI. Además, mejora la <b>accesibilidad y
+                        la
+                        experiencia del usuario</b>
+                    al proporcionar una manera nativa de manejar diálogos en HTML.</li>
+            </ul>
+        </div>
 
-            <li><b>Razón para elegirlo:</b> La etiqueta <b>&lt;dialog&gt;</b> simplifica la creación de cuadros de
-                diálogo sin necesidad de bibliotecas externas como jQuery UI. Además, mejora la <b>accesibilidad y la
-                    experiencia del usuario</b>
-                al proporcionar una manera nativa de manejar diálogos en HTML.</li>
-        </ul>
-    </article><br><br>
+        <div class="container-seccion" id="seccion3">
+            <!-- ETIQUETA <details> y <summary>: Para que sirven, ejemplo y porque se han escogido-->
+            <h2><strong>ETIQUETA &lt;details&gt; Y &lt;summary&gt;</strong></h2>
+            <ul>
+                <li>Las etiquetas <b>&lt;details&gt;</b> y <b>&lt;summary&gt;</b> se utilizan para <b>crear widgets de
+                        divulgación interactivos que
+                        permiten al usuario mostrar u ocultar contenido adicional.</b> <b>&lt;summary&gt;</b> define el
+                    encabezado visible del widget,
+                    mientras que <b>&lt;details&gt;</b> contiene el contenido que se puede expandir o contraer. Estas
+                    etiquetas son útiles para mejorar
+                    la organización del contenido y la experiencia del usuario, permitiendo que se oculte información
+                    menos
+                    relevante hasta que
+                    el usuario decida verla.</li><br><br>
+                <img src="ApuntesHTML/details_summary.png" alt="Etiqueta dialog" width="600" height="200">
 
-    <article id="seccion3">
-        <!-- ETIQUETA <details> y <summary>: Para que sirven, ejemplo y porque se han escogido-->
-        <h2><strong>ETIQUETA &lt;details&gt; Y &lt;summary&gt;</strong></h2>
-        <ul>
-            <li>Las etiquetas <b>&lt;details&gt;</b> y <b>&lt;summary&gt;</b> se utilizan para <b>crear widgets de
-                    divulgación interactivos que
-                    permiten al usuario mostrar u ocultar contenido adicional.</b> <b>&lt;summary&gt;</b> define el
-                encabezado visible del widget,
-                mientras que <b>&lt;details&gt;</b> contiene el contenido que se puede expandir o contraer. Estas
-                etiquetas son útiles para mejorar
-                la organización del contenido y la experiencia del usuario, permitiendo que se oculte información menos
-                relevante hasta que
-                el usuario decida verla.</li><br><br>
-            <center><img src="Apuntes/details_summary.png" alt="Etiqueta dialog" width="600" height="200"></center>
-            <br><br>
-
-            <li><b>Razón para elegirlo:</b> Estas etiquetas son útiles para mejorar la <b>organización del contenido y
+                <li><b>Razón para elegirlo:</b> Estas etiquetas son útiles para mejorar la <b>organización del contenido
+                        y
+                        la
+                        experiencia del usuario</b>, permitiendo que se oculte información menos relevante hasta que el
+                    usuario
+                    decida verla. Esto es especialmente útil en páginas con mucho contenido, mejorando la usabilidad y
                     la
-                    experiencia del usuario</b>, permitiendo que se oculte información menos relevante hasta que el
-                usuario
-                decida verla. Esto es especialmente útil en páginas con mucho contenido, mejorando la usabilidad y la
-                accesibilidad.</li>
-        </ul>
-    </article><br><br>
+                    accesibilidad.</li>
+            </ul>
+        </div>
 
-    <article id="seccion4">
-        <!-- CONCLUSIÓN -->
-        <h2><strong>CONCLUSIÓN</strong></h2>
-        <ul>
-            <li>La inclusión de estos dos nuevos conceptos en HTML, <b>&lt;dialog&gt;</b> y
-                <b>&lt;details&gt;</b>/<b>&lt;summary&gt;</b>, proporciona
-                herramientas adicionales para crear <b>interfaces de usuario más ricas y accesibles</b>. Estas
-                etiquetas nativas no solo simplifican el desarrollo, sino que también mejoran la experiencia
-                del usuario al ofrecer funcionalidades avanzadas sin la necesidad de scripts o bibliotecas
-                adicionales. Continuar explorando y utilizando estas características avanzadas de HTML
-                permitirá desarrollar páginas web más dinámicas y eficientes.
-            </li>
-        </ul>
-    </article><br>
+        <div class="container-seccion" id="seccion4">
+            <!-- CONCLUSIÓN -->
+            <h2><strong>CONCLUSIÓN</strong></h2>
+            <ul>
+                <li>La inclusión de estos dos nuevos conceptos en HTML, <b>&lt;dialog&gt;</b> y
+                    <b>&lt;details&gt;</b>/<b>&lt;summary&gt;</b>, proporciona
+                    herramientas adicionales para crear <b>interfaces de usuario más ricas y accesibles</b>. Estas
+                    etiquetas nativas no solo simplifican el desarrollo, sino que también mejoran la experiencia
+                    del usuario al ofrecer funcionalidades avanzadas sin la necesidad de scripts o bibliotecas
+                    adicionales. Continuar explorando y utilizando estas características avanzadas de HTML
+                    permitirá desarrollar páginas web más dinámicas y eficientes.
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container-author">
+        <div>
+            <img src="Imagenes/author.png" alt="Samuel Henares Choaibi">
+        </div>
+        <div class="flex-author-description ">
+            <h2>Samuel Henares Choaibi</h2>
+            <p>Soy alumno de CIFP Pau Casesnoves del Ciclo Formativo del Grado Superior de Desarrollo de Aplicaciones
+                Multiplataforma. Este es un trabajo de la asignatura de Lenguajes de Marcas y Gestión de la Información
+                (LMG). Esta página se basa en los apuntes proporcionados por el profesor de la asignatura con el
+                objetivo de
+                hacer buen uso de CSS y HTML para el primer trimestre.</p>
+        </div>
+        <div>
+
+
+        </div>
+
+    </div>
 </body>
 <!-- Fin del cuerpo -->
 

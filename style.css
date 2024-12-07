@@ -306,7 +306,6 @@ nav a:hover {
     border-radius: 25px;
     gap: 10px;
     margin-bottom: 50px;
-    margin-right: 200px;
 }
 
 
@@ -376,12 +375,13 @@ nav a:hover {
         grid-template-columns: 1fr;
         gap: 20px;
         padding: 10px;
+        margin-left: 0;
     }
 
     .container-seccion {
         width: 50%;
         position: relative;
-        left: 250px;
+        left: 200px;
         padding: 30px;
         align-items: center;
         justify-content: center;
@@ -414,6 +414,10 @@ nav a:hover {
         max-height: fit-content;
         border-radius: 25px;
     }
+
+    .container-author {
+        margin-right: 0;
+    }
 }
 
 @media (max-width: 768px) {
@@ -422,13 +426,14 @@ nav a:hover {
         flex-direction: column;
         align-items: center;
         padding: 10px;
+        margin-left: 0;
     }
 
     .container-seccion {
         width: 90%;
         padding: 30px;
         position: relative;
-        left: 70px;
+        left: 10px;
     }
 
     .box-header {
@@ -512,7 +517,7 @@ nav a:hover {
 
     .container-seccion {
         width: 95%;
-        padding: 10px;
+        padding: 35px;
         position: relative;
         left: 50px;
 
@@ -579,6 +584,13 @@ nav a:hover {
 
     .container-author img {
         width: 60%;
+    }
+
+    .flex-author-description {
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        right: 30px;
     }
 }
 
