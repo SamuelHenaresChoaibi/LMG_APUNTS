@@ -18,341 +18,397 @@
     <!-- Configura la ventana gráfica para un diseño responsive -->
 
     <link rel="icon" href="Imagenes/ex.png"> <!-- Define el logo -->
+    <link rel="stylesheet" href="style.css">
     <title>BUENAS PRÁCTICAS EN HTML</title>
     <!-- Define el título del documento que aparece en la pestaña del navegador -->
 </head>
 <!-- Fin del encabezado-->
 
 <body> <!-- Cuerpo -->
-    <p><a href="index.html" target="_self"><span style="color: black"><b><img src="Imagenes/flecha.png"
-                        alt="Volver al menú principal" width="50" height="50"></b></span></a>
-    </p>
-    <center> <!-- Por ahora se utilizará <center> para estilizar un poco el texto mientras solo se usa HTML-->
-        <h1><span style="color: black"><b>3. BUENAS PRÁCTICAS CON HTML</b></span></h1>
-        <img src="Imagenes/ex.png" alt="HTML 5" width="300" height="300">
-    </center>
-    <hr>
+    <header>
+        <div class="notes-header">
+            <nav>
+                <a href="index.html" target="_self">⬅</a>
+            </nav>
 
-    <h1><b>OTROS APARTADOS</b></h1>
-    <ol>
-        <li><a href="htmlBasico.html" target="_self"><span style="color: black"><b>HTML Básico</b></span></a></li>
-        <br><br>
-        <!-- Enlace para apartado 1.HTML Básico, se debe agregar la URL -->
+            <div class="box-header">
+                <img src="Imagenes/ex.png" alt="Buenas Prácticas HTML" width="300" height="300">
+                <h1>3. BUENAS PRÁCTICAS</h1>
+            </div>
+        </div>
+    </header>
 
-        <li><a href="htmlAvan.html" target="_self"><span style="color: black"><b>HTML Avanzado</b></span></a></li><br>
-        <!-- Enlace para apartado 2.HTML Avanzado, se debe agregar la URL -->
-    </ol>
-    <ol start="4">
-        <li><a href="conceptosDos.html" target="_self"><span style="color: black"><b>Nuevos conceptos en
-                        HTML</b></span></a></li><br><br>
-        <!-- Enlace para apartado 4. Nuevos conceptos, se debe agregar la URL -->
-        
-        <li><a href="cssBasico.html" target="_self"><span style="color: black"><b>CSS Básico</b></span></a></li>
-        <!-- Enlace para apartado 5. CSS Básico, se debe agregar la URL -->
-    </ol><br>
+    <div class="margin-body">
+        <h1 class="otros-apartados"><b>OTROS APARTADOS</b></h1>
+        <div class="box-apartados-container">
 
-    <article>
-        <h1><b>ÍNDICE</b></h1>
-        <!-- Índice dividido en secciones con enlace directo a cada apartado del tema de HTML Básico -->
+            <!-- Apartado 1: HTML Básico -->
+            <div class="container-apartado">
+                <p><a href="htmlBasico.html" target="_self"><b><img src="Imagenes/html.png"
+                                alt="Buenas Prácticas con HTML" width="100%"></b></a></p>
+                <p><a href="htmlBasico.html" target="_self"><b>HTML Básico</b></a></p>
+            </div>
 
-        <ol type="1">
-            <li><a href="#seccion1">Buenas prácticas con Comentarios</a></li><br>
-            <li><a href="#seccion2">Buenas Prácticas con Imágenes</a></li><br>
-            <li><a href="#seccion3">Buenas Prácticas con Enlaces</a></li><br>
-            <li><a href="#seccion4">Buenas Prácticas con Listas</a></li><br>
-            <li><a href="#seccion5">Buenas Prácticas con Elementos de Estructura</a></li><br>
-            <li><a href="#seccion6">Buenas Prácticas para crear Formularios en HTML</a></li><br>
-            <li><a href="#seccion7">Buenas Prácticas para Integrar Multimedia</a></li><br>
-            <li><a href="#seccion8">Buenas Prácticas con la Etiqueta &lt;center&gt;</a></li><br>
-            <li><a href="#seccion9">Buenas Prácticas con la Etiqueta &lt;div&gt;</a></li><br>
-            <li><a href="#seccion10">Buenas Prácticas con la Etiqueta &lt;span&gt;</a></li><br>
-            <li><a href="#seccion11">Buenas Prácticas con la Etiqueta &lt;hr&gt;</a></li><br>
-            <li><a href="#seccion12">Buenas Prácticas con la Etiqueta &lt;template&gt;</a></li><br>
-            <li><a href="#seccion13">Buenas Prácticas con la Etiqueta &lt;iframes&gt;</a></li><br>
-            <li><a href="#seccion14">Buenas Prácticas para el Úso de Metadatos en HTML</a></li><br>
+            <!-- Apartado 2: HTML Avanzado -->
+            <div class="container-apartado">
+                <p><a href="htmlAvan.html" target="_self"><b><img src="Imagenes/html5.png" alt="HTML Avanzado"
+                                width="100%"></b></a></p>
+                <p><a href="htmlAvan.html" target="_self"><b>HTML Avanzado</b></a>
+                </p>
+            </div>
 
-        </ol>
-    </article><br>
+            <!-- Apartado 4: Nuevos Conceptos en HTML -->
+            <div class="container-apartado">
+                <p><a href="conceptosDos.html" target="_self"><b><img src="Imagenes/bomb.png"
+                                alt="Nuevos Conceptos HTML" width="100%"></b></a></p>
+                <p><a href="conceptosDos.html" target="_self"><b>Nuevos Conceptos en
+                            HTML</b></a></p>
+            </div>
+
+            <!-- Apartado 5: CSS Básico -->
+            <div class="container-apartado">
+                <p><a href="cssBasico.html" target="_self"><b><img src="Imagenes/csslogo.png" alt="CSS Básico"
+                                width="100%"></b></a></p>
+                <p><a href="cssBasico.html" target="_self"><b>CSS Básico</b></a>
+                </p>
+            </div>
+        </div>
 
 
-    <!--BUENAS PRÁCTICAS: Tabla explicatvia para dar a entender el buen uso de los elementos en HTML-->
-    <h2><span style="color: red;"><strong>BUENAS PRÁCTICAS HTML</strong></span></h2>
-    <table border="1" cellpadding="10" cellspacing="5" style="background-color: antiquewhite;">
-        <thead>
-            <th><span style="color: red; font-style: inherit;"> IMPORTANTE: BUENAS PRÁCTICAS</span></th>
-        </thead>
-        <tbody>
-            <article id="seccion1"> <!-- 1. BUENAS PRÁCTICAS CON COMENTARIOS -->
-                <tr>
-                    <td><strong>Buenas Prácticas con Comentarios:</strong>
-                        <ul>
-                            <li>Mantenerlos claros y concisos: Los comentarios deben
-                                ser breves y proporcionar información útil.</li><br>
-                            <li>Evitar comentarios excesivos: Sólo añade
-                                comentarios donde sea necesario para evitar sobrecargar
-                                el código.</li><br>
-                            <li>No dejar comentarios innecesarios en producción: Los
-                                comentarios en entornos de desarrollo pueden ser
-                                útiles, pero en código de producción es mejor dejar sólo
-                                los esenciales.</li><br>
-                        </ul>
+        <div class="indice">
+            <h1><b>ÍNDICE</b></h1>
+            <!-- Índice dividido en secciones con enlace directo a cada apartado del tema de HTML Básico -->
+            <ol type="1">
+                <li><a href="#seccion1">Buenas prácticas con Comentarios</a></li><br>
+                <li><a href="#seccion2">Buenas Prácticas con Imágenes</a></li><br>
+                <li><a href="#seccion3">Buenas Prácticas con Enlaces</a></li><br>
+                <li><a href="#seccion4">Buenas Prácticas con Listas</a></li><br>
+                <li><a href="#seccion5">Buenas Prácticas con Elementos de Estructura</a></li><br>
+                <li><a href="#seccion6">Buenas Prácticas para crear Formularios en HTML</a></li><br>
+                <li><a href="#seccion7">Buenas Prácticas para Integrar Multimedia</a></li><br>
+                <li><a href="#seccion8">Buenas Prácticas con la Etiqueta &lt;center&gt;</a></li><br>
+                <li><a href="#seccion9">Buenas Prácticas con la Etiqueta &lt;div&gt;</a></li><br>
+                <li><a href="#seccion10">Buenas Prácticas con la Etiqueta &lt;span&gt;</a></li><br>
+                <li><a href="#seccion11">Buenas Prácticas con la Etiqueta &lt;hr&gt;</a></li><br>
+                <li><a href="#seccion12">Buenas Prácticas con la Etiqueta &lt;template&gt;</a></li><br>
+                <li><a href="#seccion13">Buenas Prácticas con la Etiqueta &lt;iframes&gt;</a></li><br>
+                <li><a href="#seccion14">Buenas Prácticas para el Úso de Metadatos en HTML</a></li><br>
 
-                    </td>
-                </tr>
-            </article>
+            </ol>
+        </div>
 
-            <article id="seccion2"> <!-- 2. BUENAS PRÁCTICAS CON IMÁGENES -->
-                <tr>
-                    <td><strong>Buenas Prácticas con Imágenes:</strong>
-                        <ul>
-                            <li><b>Siempre se utiliza el atributo alt</b> para garantizar una buena
-                                accesibilidad y SEO.</li><br>
-                            <li>Evita insertar imágenes muy grandes sin reducir su
-                                tamaño, ya que esto puede afectar al rendimiento de la página.</li><br>
-                            <li>Si las imágenes son responsivas (se adaptan a diferentes
-                                dispositivos), utiliza <b>porcentajes</b> en lugar de píxeles por
-                                width y height.</li><br>
-                        </ul>
-                    </td>
-                </tr>
-            </article>
 
-            <article id="seccion3"> <!-- 3. BUENAS PRÁCTICAS CON ENLACES -->
-                <tr>
-                    <td><strong>Buenas Prácticas con Enlaces: </strong>
-                        <ul>
-                            <li>Use <b>enlaces descriptivos</b> en lugar de genéricos como
-                                "Clica aquí". Esto mejora la accesibilidad y el SEO.</li><br>
+
+
+        <!--BUENAS PRÁCTICAS: Tabla explicatvia para dar a entender el buen uso de los elementos en HTML-->
+        <h2><span style="color: rgb(190, 102, 102);"><strong>BUENAS PRÁCTICAS HTML</strong></span></h2>
+        <table border="1" cellpadding="10" cellspacing="5" style="background-color: antiquewhite;">
+            <thead>
+                <th><span style="color: red; font-style: inherit;"> IMPORTANTE: BUENAS PRÁCTICAS</span></th>
+            </thead>
+            <tbody>
+                <article id="seccion1"> <!-- 1. BUENAS PRÁCTICAS CON COMENTARIOS -->
+                    <tr>
+                        <td><strong>Buenas Prácticas con Comentarios:</strong>
                             <ul>
-                                <li><b>Correcto: </b>"Visita la página de <b>Contacto</b>"</li>
-                                <li><b>Incorrecto: </b>"Clica aquí"</li><br>
+                                <li>Mantenerlos claros y concisos: Los comentarios deben
+                                    ser breves y proporcionar información útil.</li><br>
+                                <li>Evitar comentarios excesivos: Sólo añade
+                                    comentarios donde sea necesario para evitar sobrecargar
+                                    el código.</li><br>
+                                <li>No dejar comentarios innecesarios en producción: Los
+                                    comentarios en entornos de desarrollo pueden ser
+                                    útiles, pero en código de producción es mejor dejar sólo
+                                    los esenciales.</li><br>
                             </ul>
-                            <li>Use <b>target="_blank"</b> sólo cuando sea realmente
-                                necesario, ya que abrir enlaces en nuevas pestañas
-                                puede confundir a algunos usuarios.</li><br>
-                            <li>Siempre asegúrate de que los <b>enlaces sean
-                                    accesibles</b> añadiendo una descripción adecuada para
-                                usuarios con lectores de pantalla.</li><br>
-                        </ul>
-                    </td>
-                </tr>
-            </article>
 
-            <article id="seccion4"> <!-- 4. BUENAS PRÁCTICAS CON LISTAS -->
-                <tr>
-                    <td><strong>Buenas Prácticas con Listas: </strong>
-                        <ul>
-                            <li>Use <b>listas no ordenadas (&lt;ul&gt;)</b> cuando el orden de los
-                                ítems no sea importante.</li><br>
-                            <li>Use <b>listas ordenadas (&lt;ol&gt;)</b> cuando el orden sea
-                                relevante.</li><br>
-                            <li>Personaliza las listas según las necesidades visuales o
-                                estilísticas utilizando los atributos adecuados.</li><br>
-                        </ul>
-                    </td>
-                </tr>
-            </article>
+                        </td>
+                    </tr>
+                </article>
 
-            <article id="seccion5"> <!-- 5. BUENAS PRÁCTICAS CON ELEMENTOS DE ESTRUCTURA -->
-                <tr>
-                    <td><strong>Buenas Prácticas para utilizar los Elementos de Estructura: </strong>
-                        <ul>
-                            <li><b>Utiliza elementos semánticos</b> para organizar mejor la
-                                página. Esto hace que sea más comprensible para los
-                                navegadores, buscadores y lectores de pantalla.</li><br>
-                            <li><b>Evita el uso excesivo de divs</b> ("divitis") y aprovecha las
-                                etiquetas como <b>&lt;section&gt;</b>, <b>&lt;article&gt;</b>, y <b>&lt;aside&gt;</b>
-                                para hacer
-                                que la página sea más semántica.</li><br>
-                            <li><b>Proporciona enlaces de navegación claros</b> dentro de los
-                                elementos <b>&lt;header&gt;</b> y <b>&lt;footer&gt;</b> para mejorar
-                                la experiencia de usuario y la accesibilidad.</li><br>
-                            <li>No abuses de <b>&lt;aside&gt;</b>, ya que este elemento debe
-                                contener información complementaria y no esencial para
-                                al contenido principal.</li><br>
-                        </ul>
-                    </td>
-                </tr>
-            </article>
+                <article id="seccion2"> <!-- 2. BUENAS PRÁCTICAS CON IMÁGENES -->
+                    <tr>
+                        <td><strong>Buenas Prácticas con Imágenes:</strong>
+                            <ul>
+                                <li><b>Siempre se utiliza el atributo alt</b> para garantizar una buena
+                                    accesibilidad y SEO.</li><br>
+                                <li>Evita insertar imágenes muy grandes sin reducir su
+                                    tamaño, ya que esto puede afectar al rendimiento de la página.</li><br>
+                                <li>Si las imágenes son responsivas (se adaptan a diferentes
+                                    dispositivos), utiliza <b>porcentajes</b> en lugar de píxeles por
+                                    width y height.</li><br>
+                            </ul>
+                        </td>
+                    </tr>
+                </article>
+
+                <article id="seccion3"> <!-- 3. BUENAS PRÁCTICAS CON ENLACES -->
+                    <tr>
+                        <td><strong>Buenas Prácticas con Enlaces: </strong>
+                            <ul>
+                                <li>Use <b>enlaces descriptivos</b> en lugar de genéricos como
+                                    "Clica aquí". Esto mejora la accesibilidad y el SEO.</li><br>
+                                <ul>
+                                    <li><b>Correcto: </b>"Visita la página de <b>Contacto</b>"</li>
+                                    <li><b>Incorrecto: </b>"Clica aquí"</li><br>
+                                </ul>
+                                <li>Use <b>target="_blank"</b> sólo cuando sea realmente
+                                    necesario, ya que abrir enlaces en nuevas pestañas
+                                    puede confundir a algunos usuarios.</li><br>
+                                <li>Siempre asegúrate de que los <b>enlaces sean
+                                        accesibles</b> añadiendo una descripción adecuada para
+                                    usuarios con lectores de pantalla.</li><br>
+                            </ul>
+                        </td>
+                    </tr>
+                </article>
+
+                <article id="seccion4"> <!-- 4. BUENAS PRÁCTICAS CON LISTAS -->
+                    <tr>
+                        <td><strong>Buenas Prácticas con Listas: </strong>
+                            <ul>
+                                <li>Use <b>listas no ordenadas (&lt;ul&gt;)</b> cuando el orden de los
+                                    ítems no sea importante.</li><br>
+                                <li>Use <b>listas ordenadas (&lt;ol&gt;)</b> cuando el orden sea
+                                    relevante.</li><br>
+                                <li>Personaliza las listas según las necesidades visuales o
+                                    estilísticas utilizando los atributos adecuados.</li><br>
+                            </ul>
+                        </td>
+                    </tr>
+                </article>
+
+                <article id="seccion5"> <!-- 5. BUENAS PRÁCTICAS CON ELEMENTOS DE ESTRUCTURA -->
+                    <tr>
+                        <td><strong>Buenas Prácticas para utilizar los Elementos de Estructura: </strong>
+                            <ul>
+                                <li><b>Utiliza elementos semánticos</b> para organizar mejor la
+                                    página. Esto hace que sea más comprensible para los
+                                    navegadores, buscadores y lectores de pantalla.</li><br>
+                                <li><b>Evita el uso excesivo de divs</b> ("divitis") y aprovecha las
+                                    etiquetas como <b>&lt;section&gt;</b>, <b>&lt;article&gt;</b>, y
+                                    <b>&lt;aside&gt;</b>
+                                    para hacer
+                                    que la página sea más semántica.
+                                </li><br>
+                                <li><b>Proporciona enlaces de navegación claros</b> dentro de los
+                                    elementos <b>&lt;header&gt;</b> y <b>&lt;footer&gt;</b> para mejorar
+                                    la experiencia de usuario y la accesibilidad.</li><br>
+                                <li>No abuses de <b>&lt;aside&gt;</b>, ya que este elemento debe
+                                    contener información complementaria y no esencial para
+                                    al contenido principal.</li><br>
+                            </ul>
+                        </td>
+                    </tr>
+                </article>
 
 
-            <article id="seccion6"> <!-- 6. BUENAS PRÁCTICAS CON FORMULARIOS HTML -->
-                <tr>
-                    <td><strong>Buenas Prácticas para crear Formularios en HTML: </strong>
-                        <ul>
-                            <li>Uso de la etiqueta &lt;label&gt; para mejorar la accesibilidad</li><br>
-                            <li> Utiliza los tipos de entrada adecuados</li><br>
-                            <li> Definir el atributo requerido para campos obligatorios</li><br>
-                            <li> Añade la validación nativa con pattern y min/max</li><br>
-                            <li> Usa placeholder para proporcionar pistas</li><br>
-                            <li> Organiza los campos del formulario en grupos lógicos</li><br>
-                            <li> Proporciona información clara sobre los errores</li><br>
-                            <li> Utiliza autocomplete para mejorar la experiencia de usuario</li>
-                        </ul>
-                    </td>
-                </tr>
-            </article>
+                <article id="seccion6"> <!-- 6. BUENAS PRÁCTICAS CON FORMULARIOS HTML -->
+                    <tr>
+                        <td><strong>Buenas Prácticas para crear Formularios en HTML: </strong>
+                            <ul>
+                                <li>Uso de la etiqueta &lt;label&gt; para mejorar la accesibilidad</li><br>
+                                <li> Utiliza los tipos de entrada adecuados</li><br>
+                                <li> Definir el atributo requerido para campos obligatorios</li><br>
+                                <li> Añade la validación nativa con pattern y min/max</li><br>
+                                <li> Usa placeholder para proporcionar pistas</li><br>
+                                <li> Organiza los campos del formulario en grupos lógicos</li><br>
+                                <li> Proporciona información clara sobre los errores</li><br>
+                                <li> Utiliza autocomplete para mejorar la experiencia de usuario</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </article>
 
-            <article id="seccion7"> <!-- 7. BUENAS PRÁCTICAS PARA INTEGRAR MULTIMEDIA -->
-                <tr>
-                    <td><strong>Buenas Prácticas para Integrar Multimedia: </strong>
-                        <ul>
-                            <li><b>Proporciona formatos de archivo compatibles</b> con los
-                                diferentes navegadores para audio y vídeo (como MP4, WebM,
-                                OGG).</li><br>
-                            <li><b>Se utiliza el atributo alto</b> para las imágenes para mejorar
-                                la accesibilidad y optimizar el SEO.</li><br>
-                            <li><b>No hagas uso del atributo autoplay</b> en audio y vídeo, ya que
-                                puede interrumpir la experiencia del usuario, especialmente en
-                                dispositivos móviles.</li><br>
-                            <li><b>Controla el tamaño de los archivos multimedia</b> para evitar tiempo
-                                de carga largos y mejorar la experiencia del usuario.</li>
-                        </ul>
-                    </td>
-                </tr>
-            </article>
+                <article id="seccion7"> <!-- 7. BUENAS PRÁCTICAS PARA INTEGRAR MULTIMEDIA -->
+                    <tr>
+                        <td><strong>Buenas Prácticas para Integrar Multimedia: </strong>
+                            <ul>
+                                <li><b>Proporciona formatos de archivo compatibles</b> con los
+                                    diferentes navegadores para audio y vídeo (como MP4, WebM,
+                                    OGG).</li><br>
+                                <li><b>Se utiliza el atributo alto</b> para las imágenes para mejorar
+                                    la accesibilidad y optimizar el SEO.</li><br>
+                                <li><b>No hagas uso del atributo autoplay</b> en audio y vídeo, ya que
+                                    puede interrumpir la experiencia del usuario, especialmente en
+                                    dispositivos móviles.</li><br>
+                                <li><b>Controla el tamaño de los archivos multimedia</b> para evitar tiempo
+                                    de carga largos y mejorar la experiencia del usuario.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </article>
 
-            <article id="seccion8"> <!-- 8. BUENAS PRÁCTICAS CON LA ETIQUETA <center> -->
-                <tr>
-                    <td><strong>Buenas Prácticas con la Etiqueta &lt;center&gt;: </strong>
-                        <ul>
-                            <li><b>Está obsoleta, no usar, mejor opción: CSS</b></li>
-                        </ul>
-                    </td>
-                </tr>
-            </article>
+                <article id="seccion8"> <!-- 8. BUENAS PRÁCTICAS CON LA ETIQUETA <center> -->
+                    <tr>
+                        <td><strong>Buenas Prácticas con la Etiqueta &lt;center&gt;: </strong>
+                            <ul>
+                                <li><b>Está obsoleta, no usar, mejor opción: CSS</b></li>
+                            </ul>
+                        </td>
+                    </tr>
+                </article>
 
-            <article id="seccion9"> <!-- 9. BUENAS PRÁCTICAS CON LA ETIQUETA <div> -->
-                <tr>
-                    <td><strong>Buenas Prácticas con la Etiqueta &lt;div&gt;: </strong>
-                        <ul>
-                            <li>Uno de los errores más comunes es el uso excesivo de
-                                <b>&lt;div&gt;</b> para cualquier cosa, cuando existen
-                                etiquetas semánticas más adecuadas como
-                                <b>&lt;,header&gt;, &lt;section&gt;, &lt;article&gt;, &lt;footer&gt;...</b>
-                            </li><br>
-                            <li>Utiliza <b>&lt;div&gt;</b> para agrupar elementos que forman una
-                                unidad lógica o visual dentro de la página, pero siempre
-                                que no haya una etiqueta semántica más
-                                adecuada.</li>
-                        </ul>
-                    </td>
-                </tr>
-            </article>
+                <article id="seccion9"> <!-- 9. BUENAS PRÁCTICAS CON LA ETIQUETA <div> -->
+                    <tr>
+                        <td><strong>Buenas Prácticas con la Etiqueta &lt;div&gt;: </strong>
+                            <ul>
+                                <li>Uno de los errores más comunes es el uso excesivo de
+                                    <b>&lt;div&gt;</b> para cualquier cosa, cuando existen
+                                    etiquetas semánticas más adecuadas como
+                                    <b>&lt;,header&gt;, &lt;section&gt;, &lt;article&gt;, &lt;footer&gt;...</b>
+                                </li><br>
+                                <li>Utiliza <b>&lt;div&gt;</b> para agrupar elementos que forman una
+                                    unidad lógica o visual dentro de la página, pero siempre
+                                    que no haya una etiqueta semántica más
+                                    adecuada.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </article>
 
-            <article id="seccion10"> <!-- 10. BUENAS PRÁCTICAS CON LA ETIQUETA <span> -->
-                <tr>
-                    <td><strong>Buenas Prácticas con la Etiqueta &lt;span&gt;: </strong>
-                        <ul>
-                            <li>Uso Adecuado de &lt;span&gt; para Estilizar Texto en Línea.</li><br>
-                            <li> Evita Uso Excesivo de &lt;span&gt;.</li><br>
-                            <li> Combina &lt;span&gt; con CSS para Mantener el Código
-                                Limpiado.</li><br>
-                            <li> Sólo por Elementos en Línea.</li><br>
-                            <li> Evita Abusar del &lt;span&gt; por Crear Contenedores
-                                Sin Necesidad.</li>
-                        </ul>
-                    </td>
-                </tr>
-            </article>
+                <article id="seccion10"> <!-- 10. BUENAS PRÁCTICAS CON LA ETIQUETA <span> -->
+                    <tr>
+                        <td><strong>Buenas Prácticas con la Etiqueta &lt;span&gt;: </strong>
+                            <ul>
+                                <li>Uso Adecuado de &lt;span&gt; para Estilizar Texto en Línea.</li><br>
+                                <li> Evita Uso Excesivo de &lt;span&gt;.</li><br>
+                                <li> Combina &lt;span&gt; con CSS para Mantener el Código
+                                    Limpiado.</li><br>
+                                <li> Sólo por Elementos en Línea.</li><br>
+                                <li> Evita Abusar del &lt;span&gt; por Crear Contenedores
+                                    Sin Necesidad.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </article>
 
-            <article id="seccion11"> <!-- 11. BUENAS PRÁCTICAS CON LA ETIQUETA <hr> -->
-                <tr>
-                    <td><strong>Buenas Prácticas con la Etiqueta &lt;hr&gt;: </strong>
-                        <ul>
-                            <li><b>No abuses de la etiqueta &lt;hr&gt;</b>: Utilízala sólo cuando sea
-                                necesario para separar secciones importantes o marcar un cambio
-                                de contenido.</li><br>
-                            <li><b>Estiliza las líneas con CSS:</b> Aunque &lt;hr&gt; genera una línea
-                                por defecto, utiliza CSS para personalizar su aspecto y hacer
-                                que se ajuste al diseño de tu sitio web.</li><br>
-                            <li><b>Uso semántico:</b> Recuerda que &lt;hr&gt; se puede utilizar para indicar un
-                                cambio en el contenido o tema dentro de un documento, lo que
-                                también mejora la accesibilidad.</li><br>
-                            <li> <b>Evita utilizar &lt;hr&gt; para fines visuales sólo</b>: Si
-                                necesitas una línea sólo por estilo, considera utilizar <b>CSS</b>
-                                en lugar de la etiqueta &lt;hr&gt; para mantener el documento limpio y
-                                semántico.</li>
-                        </ul>
-                    </td>
-                </tr>
-            </article>
+                <article id="seccion11"> <!-- 11. BUENAS PRÁCTICAS CON LA ETIQUETA <hr> -->
+                    <tr>
+                        <td><strong>Buenas Prácticas con la Etiqueta &lt;hr&gt;: </strong>
+                            <ul>
+                                <li><b>No abuses de la etiqueta &lt;hr&gt;</b>: Utilízala sólo cuando sea
+                                    necesario para separar secciones importantes o marcar un cambio
+                                    de contenido.</li><br>
+                                <li><b>Estiliza las líneas con CSS:</b> Aunque &lt;hr&gt; genera una línea
+                                    por defecto, utiliza CSS para personalizar su aspecto y hacer
+                                    que se ajuste al diseño de tu sitio web.</li><br>
+                                <li><b>Uso semántico:</b> Recuerda que &lt;hr&gt; se puede utilizar para indicar un
+                                    cambio en el contenido o tema dentro de un documento, lo que
+                                    también mejora la accesibilidad.</li><br>
+                                <li> <b>Evita utilizar &lt;hr&gt; para fines visuales sólo</b>: Si
+                                    necesitas una línea sólo por estilo, considera utilizar <b>CSS</b>
+                                    en lugar de la etiqueta &lt;hr&gt; para mantener el documento limpio y
+                                    semántico.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </article>
 
-            <article id="seccion12"> <!-- 12. BUENAS PRÁCTICAS CON LA ETIQUETA <template> -->
-                <tr>
-                    <td><strong>Buenas Prácticas con la Etiqueta &lt;template&gt;: </strong>
-                        <ul>
-                            <li><b>Mantén las plantillas simples y modulares:</b> Organiza tu código dentro de
-                                &lt;template&gt; de modo que puedas reutilizar fácilmente estas plantillas en
-                                diferentes secciones de la página.</li><br>
-                            <li><b>Clona plantillas con JavaScript:</b> La etiqueta no renderiza su contenido hasta
-                                que le invocas con JavaScript, lo que te da control total sobre cuándo y
-                                cómo añadir al DOM.</li><br>
-                            <li><b>Utiliza plantillas para generar contenido dinámicamente:</b> Es muy útil en
-                                aplicaciones donde el contenido debe ser generado o actualizado en tiempo real, como
-                                listas, formularios o tarjetas de productos.</li><br>
-                            <li><b>No incluyas contenido activo dentro del template:</b> Los scripts u otros contenidos
-                                interactivos dentro del template no se ejecutarán hasta que el contenido sea añadido al
-                                DOM, así que asegúrate de añadir los elementos interactivos una vez esté en el
-                                documento.</li>
-                        </ul>
-                    </td>
-                </tr>
-            </article>
+                <article id="seccion12"> <!-- 12. BUENAS PRÁCTICAS CON LA ETIQUETA <template> -->
+                    <tr>
+                        <td><strong>Buenas Prácticas con la Etiqueta &lt;template&gt;: </strong>
+                            <ul>
+                                <li><b>Mantén las plantillas simples y modulares:</b> Organiza tu código dentro de
+                                    &lt;template&gt; de modo que puedas reutilizar fácilmente estas plantillas en
+                                    diferentes secciones de la página.</li><br>
+                                <li><b>Clona plantillas con JavaScript:</b> La etiqueta no renderiza su contenido hasta
+                                    que le invocas con JavaScript, lo que te da control total sobre cuándo y
+                                    cómo añadir al DOM.</li><br>
+                                <li><b>Utiliza plantillas para generar contenido dinámicamente:</b> Es muy útil en
+                                    aplicaciones donde el contenido debe ser generado o actualizado en tiempo real, como
+                                    listas, formularios o tarjetas de productos.</li><br>
+                                <li><b>No incluyas contenido activo dentro del template:</b> Los scripts u otros
+                                    contenidos
+                                    interactivos dentro del template no se ejecutarán hasta que el contenido sea añadido
+                                    al
+                                    DOM, así que asegúrate de añadir los elementos interactivos una vez esté en el
+                                    documento.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </article>
 
-            <article id="seccion13"> <!-- 13. BUENAS PRÁCTICAS CON LA ETIQUETA <iframes> -->
-                <tr>
-                    <td><strong>Buenas Prácticas con la Etiqueta &lt;iframes&gt;: </strong>
-                        <ul>
-                            <li><b>Evita el uso excesivo de iframes:</b> El uso excesivo de iframes puede hacer que la
-                                página
-                                sea más lenta y más difícil de gestionar.
-                                Utilízalos sólo cuando sea necesario (como para incrustar contenido externo).</li><br>
-                            <li><b>Utiliza el atributo sandbox por seguridad:</b> Cuando incrustas contenido de otros
-                                sitios,
-                                utiliza el atributo <b>sandbox</b> para
-                                limitar las acciones que el iframe puede realizar dentro de tu sitio web, mejorando la
-                                seguridad.</li><br>
-                            <li><b>Optimiza la altura y anchura:</b> Ajusta el tamaño del iframe para asegurarte de que
-                                el
-                                contenido se vea correctamente en
-                                todos los tamaños de pantalla, especialmente en dispositivos móviles.</li><br>
-                            <li><b>Utiliza alternativas cuando sea posible:</b> Cuando sólo necesitas cargar contenido
-                                dinámico que puedes generar tú
-                                mismo (como un vídeo o una imagen), considera cargarlo directamente en la página en
-                                lugar de utilizar un iframe.</li><br>
-                            <li><b>Use allowfullscreen para vídeos:</b> Si estás incrustando vídeos, permite que se
-                                puedan
-                                visualizar en pantalla
-                                completa con el atributo <b>allowfullscreen</b> para mejorar la experiencia del usuario.
-                            </li>
-                    </td>
-                </tr>
-            </article>
+                <article id="seccion13"> <!-- 13. BUENAS PRÁCTICAS CON LA ETIQUETA <iframes> -->
+                    <tr>
+                        <td><strong>Buenas Prácticas con la Etiqueta &lt;iframes&gt;: </strong>
+                            <ul>
+                                <li><b>Evita el uso excesivo de iframes:</b> El uso excesivo de iframes puede hacer que
+                                    la
+                                    página
+                                    sea más lenta y más difícil de gestionar.
+                                    Utilízalos sólo cuando sea necesario (como para incrustar contenido externo).</li>
+                                <br>
+                                <li><b>Utiliza el atributo sandbox por seguridad:</b> Cuando incrustas contenido de
+                                    otros
+                                    sitios,
+                                    utiliza el atributo <b>sandbox</b> para
+                                    limitar las acciones que el iframe puede realizar dentro de tu sitio web, mejorando
+                                    la
+                                    seguridad.</li><br>
+                                <li><b>Optimiza la altura y anchura:</b> Ajusta el tamaño del iframe para asegurarte de
+                                    que
+                                    el
+                                    contenido se vea correctamente en
+                                    todos los tamaños de pantalla, especialmente en dispositivos móviles.</li><br>
+                                <li><b>Utiliza alternativas cuando sea posible:</b> Cuando sólo necesitas cargar
+                                    contenido
+                                    dinámico que puedes generar tú
+                                    mismo (como un vídeo o una imagen), considera cargarlo directamente en la página en
+                                    lugar de utilizar un iframe.</li><br>
+                                <li><b>Use allowfullscreen para vídeos:</b> Si estás incrustando vídeos, permite que se
+                                    puedan
+                                    visualizar en pantalla
+                                    completa con el atributo <b>allowfullscreen</b> para mejorar la experiencia del
+                                    usuario.
+                                </li>
+                        </td>
+                    </tr>
+                </article>
 
-            <article id="seccion14"> <!-- 14. BUENAS PRÁCTICAS PARA EL ÚSO DE METADATOS EN HTML -->
-                <tr>
-                    <td><strong>Buenas Prácticas para el Úso de Metadatos en HTML: </strong>
-                        <ul>
-                            <li><b>Use el conjunto de caracteres UTF-8</b> para garantizar que todos los caracteres
-                                especiales se muestren correctamente en todos los dispositivos y navegadores.</li><br>
-                            <li> <b>Incluye una descripción relevante</b> de la página para ayudar a los motores de
-                                búsqueda
-                                a comprender mejor el contenido y mejorar tu clasificación.</li><br>
-                            <li> <b>Optimiza para móviles</b> utilizando la etiqueta <b>viewport</b> para asegurar que
-                                la
-                                página se adapte correctamente a distintos dispositivos.</li><br>
-                            <li> <b>Incluye Open Graph Tags</b> si quieres que tu página se muestre de forma
-                                atractiva cuando se comparta en redes sociales.</li><br>
-                            <li> <b>Use metadatos de robots</b> para controlar cómo quieres que los motores de
-                                búsqueda indexen o no indexen tu página.</li>
-                    </td>
-                </tr>
-            </article>
-        </tbody>
+                <article id="seccion14"> <!-- 14. BUENAS PRÁCTICAS PARA EL ÚSO DE METADATOS EN HTML -->
+                    <tr>
+                        <td><strong>Buenas Prácticas para el Úso de Metadatos en HTML: </strong>
+                            <ul>
+                                <li><b>Use el conjunto de caracteres UTF-8</b> para garantizar que todos los caracteres
+                                    especiales se muestren correctamente en todos los dispositivos y navegadores.</li>
+                                <br>
+                                <li> <b>Incluye una descripción relevante</b> de la página para ayudar a los motores de
+                                    búsqueda
+                                    a comprender mejor el contenido y mejorar tu clasificación.</li><br>
+                                <li> <b>Optimiza para móviles</b> utilizando la etiqueta <b>viewport</b> para asegurar
+                                    que
+                                    la
+                                    página se adapte correctamente a distintos dispositivos.</li><br>
+                                <li> <b>Incluye Open Graph Tags</b> si quieres que tu página se muestre de forma
+                                    atractiva cuando se comparta en redes sociales.</li><br>
+                                <li> <b>Use metadatos de robots</b> para controlar cómo quieres que los motores de
+                                    búsqueda indexen o no indexen tu página.</li>
+                        </td>
+                    </tr>
+                </article>
+            </tbody>
+    </div>
     </table>
-    <br>
+    </div>
+    <div class="container-author">
+        <div>
+            <img src="Imagenes/author.png" alt="Samuel Henares Choaibi">
+        </div>
+        <div class="flex-author-description">
+            <h2>Samuel Henares Choaibi</h2>
+            <p>Soy alumno de CIFP Pau Casesnoves del Ciclo Formativo del Grado Superior de Desarrollo de Aplicaciones
+                Multiplataforma. Este es un trabajo de la asignatura de Lenguajes de Marcas y Gestión de la Información
+                (LMG). Esta página se basa en los apuntes proporcionados por el profesor de la asignatura con el
+                objetivo de
+                hacer buen uso de CSS y HTML para el primer trimestre.</p>
+        </div>
+        <div>
 
+
+        </div>
+
+    </div>
 </body>
 <!-- Fin del cuerpo -->
 
