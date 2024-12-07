@@ -1,12 +1,11 @@
 body {
     background-color: #c4bdbd;
-    font-family: "Segoe UI";
+    font-family: 'Segoe UI', sans-serif;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     align-items: center;
     color: white;
-    font-family: 'Courier New', Courier, monospace;
 }
 
 ul {
@@ -155,6 +154,13 @@ nav a:hover {
 .margin-body {
     padding: 100px;
     align-items: center;
+}
+
+.otros-apartados {
+    animation-name: entrada-index;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-direction: reverse;
 }
 
 .box-apartados-container {
