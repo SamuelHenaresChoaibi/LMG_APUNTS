@@ -59,8 +59,10 @@ p {
 
 table {
     padding: 10px;
+    width: 100%;
+    table-layout: auto;
+    word-wrap: break-word;
     border-collapse: collapse;
-    border-color: #333;
 
 
 }
@@ -90,6 +92,8 @@ img {
     padding-top: 20px;
     padding-bottom: 20px;
     transition: transform 0.5s ease-in-out;
+    width: 75%;
+    height: 50%;
 }
 
 img:hover {
@@ -170,7 +174,8 @@ nav a:hover {
     padding: 20px;
     text-align: center;
     width: 200px;
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, background-color 0.5s ease-in-out;
+    transition: color 0.5s ease-in-out;
     animation-name: entrada-index;
     animation-duration: 2.5s;
     animation-iteration-count: 1;
@@ -183,6 +188,8 @@ nav a:hover {
 
 .container-apartado:hover {
     transform: translateY(-10px);
+    background-color: #333;
+    color: white;
 }
 
 .container-apartado img {
@@ -196,11 +203,12 @@ nav a:hover {
     transform: scale(1.1);
 }
 
-.container-apartado p {
+.container-apartado a {
     font-size: 1.1em;
     color: #333;
     margin-top: 10px;
     font-weight: bold;
+    transition: color 0.5s ease-in-out;
 }
 
 
@@ -214,12 +222,12 @@ nav a:hover {
     width: 200px;
     transition: transform 0.3s ease-in-out;
     width: 300px;
-    position: relative;
-    top: 60px;
-    left: 950px;
     color: black;
     animation-name: entrada-header;
     animation-name: 2s;
+    position: relative;
+    left: 1100px;
+    top: 50px;
 }
 
 .box-header:hover {
@@ -249,10 +257,17 @@ nav a:hover {
     background-color: #adadad;
     transition: transform 0.5s ease-in-out;
     border-radius: 25px;
+    width: 25%;
+    position: relative;
+    left: 800px;
+    margin-top: 150px;
+    margin-bottom: 150px;
+
 }
 
 .indice a {
     transition: transform 0.5s ease-in-out, color 0.1s ease-in-out;
+    padding-right: 20px;
 }
 
 .indice a:hover {
@@ -276,25 +291,54 @@ nav a:hover {
 .grid-sections {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    grid-auto-rows: min-content;
+    gap: 10px;
     justify-content: center;
-    align-items: start;
+    align-items: center;
     padding: 20px;
+    position: relative;
+    left: 125px;
+    max-width: 70%;
+    margin-left: 200px;
 }
 
 
 .container-seccion {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     background-color: #636060;
     transition: transform 0.5s ease-in-out;
     padding: 25px;
-    height: 1275px;
-    width: 1000px;
+    width: 85%;
     border-radius: 25px;
-    gap: 25px;
+    gap: 10px;
+    margin-bottom: 50px;
+
+}
+
+.container-seccion table {
+    max-width: 100%;
+    overflow-x: auto;
+    display: block;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+.container-seccion th, 
+.container-seccion td {
+    padding: 8px;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+.container-seccion th {
+    background-color: #807777;
+    color: white;
+    border: 1px solid #333;
+}
+
+.container-seccion td {
+    background-color: #999494;
+    border: 1px solid #333;
 }
 
 .container-seccion img {
@@ -307,22 +351,214 @@ nav a:hover {
 }
 
 .container-author {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 100px;
-    gap: 20px;
-    background-color: hsl(0, 0%, 20%);
+    display: flex;
+    flex-direction: row;
+    background-color: #333;
+
 }
 
 .container-author img {
     border-radius: 100%;
+    width: 90%;
+    height: 65%;
+    padding: 50px;
+    padding-top: 75px;
 }
 
-#otros-apartados{
+.flex-author-description{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-grow: 2;
+    align-items: flex-start;
+    justify-content: center;
+    margin-left: 15px;
+    padding-left: 50px;
+}
+
+#otros-apartados {
     animation-name: entrada-index;
     animation-duration: 4s;
     animation-iteration-count: 1;
     animation-direction: reverse;
+}
+
+@media (max-width: 1024px) {
+    .grid-sections {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 10px;
+    }
+
+    .container-seccion {
+        width: 95%;
+        height: auto;
+        padding: 20px;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 20px;
+    }
+
+    .container-apartado table{
+        width: max-content;
+    }
+
+    .box-header {
+        width: 35%;
+        margin: 0 auto;
+    }
+
+    .indice {
+        width: 100%;
+        position: relative;
+        right: 0;
+        padding: 20px;
+    }
+
+    .notes-header {
+        width: 100%;
+    }
+
+    img {
+        width: 75%;
+        height: 50%;
+        border-radius: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    .grid-sections {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .container-seccion {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .box-header {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .indice {
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 15px;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    nav a {
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    table {
+        font-size: 0.9em;
+    }
+
+    th,
+    td {
+        padding: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .box-header {
+        width: 25%;
+        position: relative;
+        top: 100px;
+    }
+
+    .container-apartado {
+        width: 100%;
+    }
+
+    .margin-body {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .grid-sections {
+        gap: 50px;
+    }
+
+    .container-seccion {
+        width: 95%;
+        padding: 10px;
+
+    }
+
+    .box-header {
+        padding: 20px;
+        font-size: 1rem;
+        width: 75%;
+    }
+
+    .indice {
+        font-size: 0.9rem;
+        padding: 10px;
+        position: relative;
+        right: 10px;
+    }
+
+    .indice li {
+        position: relative;
+        right: 20px;
+        width: 75px;
+    }
+
+    nav {
+        gap: 5px;
+    }
+
+    nav a {
+        font-size: 18px;
+        padding: 8px;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+    }
+
+    th,
+    td {
+        font-size: 0.8em;
+        padding: 5px;
+    }
+
+    table tr {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    th,
+    td {
+        display: block;
+        text-align: left;
+    }
+
+    th {
+        font-weight: bold;
+        background-color: #807777;
+    }
+
+    img {
+        width: 75%;
+        height: 75%;
+    }
+
 }
 
 @keyframes entrada-index {
