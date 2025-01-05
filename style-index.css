@@ -76,35 +76,40 @@ a {
 
 .container-apartado {
     background-color: #fff;
+    color: #333;
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
     text-align: center;
     width: 200px;
-    transition: transform 0.3s ease-in-out;
-    animation: entrada-content 2.5s ease-in-out forwards;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out, color 0.2s ease-in-out;
+    animation-name: entrada-index;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-direction: reverse;
+}
+
+.container-apartado a {
+    font-size: 1.1em;
+    margin-top: 10px;
+    font-weight: bold;
 }
 
 .container-apartado:hover {
     transform: translateY(-10px);
+    background-color: #333;
+    color: white;
 }
 
 .container-apartado img {
     max-width: 80%;
     height: auto;
     border-radius: 8px;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease-in-out;
 }
 
 .container-apartado img:hover {
     transform: scale(1.1);
-}
-
-.container-apartado p {
-    font-size: 1.1em;
-    color: #333;
-    margin-top: 10px;
-    font-weight: bold;
 }
 
 @media (max-width: 768px) {

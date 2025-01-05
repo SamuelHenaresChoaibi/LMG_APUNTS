@@ -381,9 +381,9 @@ nav a:hover {
     }
 
     .container-seccion {
-        width: 50%;
+        width: 90%;
         position: relative;
-        left: 200px;
+        left: 25px;
         padding: 30px;
         align-items: center;
         justify-content: center;
@@ -493,7 +493,7 @@ nav a:hover {
     }
 }
 
-@media (max-width: 620px) and (min-width: 100px) {
+@media (max-width: 620px) and (min-width: 310px) {
     .box-header {
         padding: 20px;
         font-size: 1rem;
@@ -519,11 +519,14 @@ nav a:hover {
     }
 
     .container-seccion {
-        width: 95%;
+        width: 75%;
         padding: 35px;
-        position: relative;
-        left: 50px;
+       
 
+    }
+
+    .container-seccion img{
+        width: 100%;
     }
 
     .indice {
